@@ -1,10 +1,17 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="SKY ONE">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="SKY ONE">
+  <rect width="512" height="512" fill="#000000"/>
   <path
-    d="M84 28 C84 14 66 8 50 16 C34 24 30 40 44 50 C58 60 74 62 78 72 C84 88 68 102 48 102 C28 102 16 88 18 72"
     fill="none"
     stroke="#3B82D6"
-    stroke-width="17"
+    stroke-width="68"
     stroke-linecap="butt"
     stroke-linejoin="round"
+    d="M 362 138
+       C 362 92, 310 58, 248 58
+       C 178 58, 128 104, 128 158
+       C 128 202, 162 232, 248 262
+       C 342 294, 378 326, 378 372
+       C 378 432, 326 472, 252 472
+       C 178 472, 126 428, 126 368"
   />
 </svg>

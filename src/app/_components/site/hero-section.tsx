@@ -1,15 +1,11 @@
 "use client";
 
 import Image from "next/image";
-import { useState } from "react";
 import { useLanguage } from "@/lib/i18n/language-context";
-
-const LOGO_PNG = "/logo.png";
-const LOGO_SVG = "/logo.svg";
+import { LOGO_ALT, LOGO_SRC } from "@/lib/brand";
 
 export function HeroSection() {
   const { t } = useLanguage();
-  const [logoSrc, setLogoSrc] = useState(LOGO_PNG);
 
   return (
     <section className="relative overflow-hidden bg-hero-gradient pt-[4.25rem]">
@@ -57,17 +53,16 @@ export function HeroSection() {
           </div>
 
           <div className="flex flex-col items-center lg:items-end">
-            <div className="relative w-full max-w-sm border border-steel-700/80 bg-navy-900/60 p-10 backdrop-blur-sm">
-              <div className="absolute left-0 top-0 h-1 w-full bg-brand-500" />
-              <div className="flex flex-col items-center text-center">
+            <div className="relative w-full max-w-sm overflow-hidden border border-steel-700/80 bg-black">
+              <div className="absolute left-0 top-0 z-10 h-1 w-full bg-brand-500" />
+              <div className="flex flex-col items-center px-8 py-10 text-center">
                 <Image
-                  src={logoSrc}
-                  alt="SKY ONE"
-                  width={160}
-                  height={160}
+                  src={LOGO_SRC}
+                  alt={LOGO_ALT}
+                  width={200}
+                  height={200}
                   priority
-                  className="drop-shadow-lg"
-                  onError={() => setLogoSrc(LOGO_SVG)}
+                  className="h-auto w-full max-w-[200px]"
                 />
                 <p className="mt-6 font-display text-xl font-bold text-white">
                   {t.common.companyName}

@@ -32,8 +32,8 @@ export const metadata: Metadata = {
     type: "website",
   },
   icons: {
-    icon: "/logo.svg",
-    apple: "/logo.svg",
+    icon: "/logo.png",
+    apple: "/logo.png",
   },
 };
 
@@ -49,7 +49,7 @@ export default function RootLayout({
       className={`${plexSans.variable} ${plexMono.variable}`}
     >
       <head>
-        <link rel="icon" href="/logo.svg" type="image/svg+xml" />
+        <link rel="icon" href="/logo.png" type="image/png" />
         <meta name="theme-color" content="#070b14" />
       </head>
       <body className="font-sans">{children}</body>

@@ -2,11 +2,7 @@
 
 import Image from "next/image";
 import cn from "classnames";
-import { useState } from "react";
-
-/** Prefer `public/logo.png` (attached brand asset); falls back to `public/logo.svg`. */
-const LOGO_PNG = "/logo.png";
-const LOGO_SVG = "/logo.svg";
+import { LOGO_ALT, LOGO_SRC } from "@/lib/brand";
 
 type CompanyLogoProps = {
   size?: number;
@@ -25,18 +21,15 @@ export function CompanyLogo({
   className,
   variant = "dark",
 }: CompanyLogoProps) {
-  const [src, setSrc] = useState(LOGO_PNG);
-
   return (
     <div className={cn("flex items-center gap-3", className)}>
       <Image
-        src={src}
-        alt="SKY ONE"
+        src={LOGO_SRC}
+        alt={LOGO_ALT}
         width={size}
         height={size}
         priority
         className="shrink-0"
-        onError={() => setSrc(LOGO_SVG)}
       />
       {showWordmark && (
         <div className="hidden min-w-0 sm:block">
