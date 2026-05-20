@@ -1,6 +1,10 @@
-import { siteConfig } from "@/lib/site-content";
+"use client";
+
+import { useLanguage } from "@/lib/i18n/language-context";
 
 export function HeroSection() {
+  const { t } = useLanguage();
+
   return (
     <section className="relative overflow-hidden bg-sky-950 pt-16">
       <div
@@ -16,26 +20,19 @@ export function HeroSection() {
         <div className="max-w-3xl">
           <p className="inline-flex items-center gap-2 rounded-full border border-sky-400/30 bg-sky-900/50 px-4 py-1.5 text-sm text-sky-200">
             <span className="h-2 w-2 rounded-full bg-emerald-400" />
-            Montgomery, Alabama · Automotive Logistics Hub
+            {t.hero.badge}
           </p>
 
           <h1 className="mt-8 font-display text-4xl font-bold leading-tight tracking-tight text-white sm:text-5xl lg:text-6xl">
-            {siteConfig.name}
+            {t.common.companyName}
           </h1>
 
           <p className="mt-6 text-xl leading-relaxed text-sky-100 sm:text-2xl">
-            {siteConfig.tagline}
+            {t.hero.tagline}
           </p>
-          <p className="mt-2 text-lg text-sky-200/80">{siteConfig.taglineKo}</p>
 
           <p className="mt-8 max-w-2xl text-base leading-relaxed text-sky-100/90 sm:text-lg">
-            SKY ONE Solution provides total solution services based on the automobile industry.
-            Our team brings deep expertise from the automotive sector to deliver results that
-            meet your expectations.
-          </p>
-          <p className="mt-3 max-w-2xl text-sm leading-relaxed text-sky-200/70">
-            스카이 원 솔루션은 자동차 산업 관련 필요하신 모든 서비스를 제공합니다.
-            자동차 분야 출신의 직원들로 이 분야에 높은 이해도를 갖추고 있습니다.
+            {t.hero.description}
           </p>
 
           <div className="mt-10 flex flex-wrap gap-4">
@@ -43,23 +40,19 @@ export function HeroSection() {
               href="#services"
               className="rounded-full bg-sky-500 px-8 py-3 text-sm font-semibold text-white shadow-lg shadow-sky-500/25 transition hover:bg-sky-400"
             >
-              Our Services
+              {t.hero.ctaServices}
             </a>
             <a
               href="#about"
               className="rounded-full border border-sky-400/40 px-8 py-3 text-sm font-semibold text-sky-100 transition hover:border-sky-300 hover:bg-sky-900/50"
             >
-              Company Profile
+              {t.hero.ctaAbout}
             </a>
           </div>
         </div>
 
         <div className="mt-16 grid gap-4 sm:grid-cols-3">
-          {[
-            { value: "15", unit: "Acres", label: "Facility Area" },
-            { value: "34,588", unit: "sq.ft", label: "Warehouse Space" },
-            { value: "24/7", unit: "", label: "Ready to Serve" },
-          ].map((stat) => (
+          {t.hero.stats.map((stat) => (
             <div
               key={stat.label}
               className="rounded-2xl border border-white/10 bg-white/5 px-6 py-5 backdrop-blur-sm"

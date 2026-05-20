@@ -1,22 +1,18 @@
 type SectionHeadingProps = {
-  id?: string;
   label: string;
   title: string;
   subtitle?: string;
-  subtitleKo?: string;
   light?: boolean;
 };
 
 export function SectionHeading({
-  id,
   label,
   title,
   subtitle,
-  subtitleKo,
   light = false,
 }: SectionHeadingProps) {
   return (
-    <div id={id} className="mx-auto max-w-3xl text-center">
+    <div className="mx-auto max-w-3xl text-center">
       <p
         className={`text-sm font-semibold uppercase tracking-widest ${
           light ? "text-sky-300" : "text-sky-600"
@@ -38,15 +34,6 @@ export function SectionHeading({
           }`}
         >
           {subtitle}
-        </p>
-      )}
-      {subtitleKo && (
-        <p
-          className={`mt-2 text-base ${
-            light ? "text-sky-200/80" : "text-slate-500"
-          }`}
-        >
-          {subtitleKo}
         </p>
       )}
     </div>

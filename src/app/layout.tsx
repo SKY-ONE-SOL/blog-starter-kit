@@ -1,4 +1,3 @@
-import { SiteFooter } from "@/app/_components/site/site-footer";
 import type { Metadata } from "next";
 import { Plus_Jakarta_Sans, DM_Sans } from "next/font/google";
 
@@ -38,15 +37,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${jakarta.variable} ${dmSans.variable}`}>
+    <html lang="en" suppressHydrationWarning className={`${jakarta.variable} ${dmSans.variable}`}>
       <head>
         <link rel="icon" href="/favicon/favicon.ico" />
         <meta name="theme-color" content="#121f57" />
       </head>
-      <body className="font-sans">
-        {children}
-        <SiteFooter />
-      </body>
+      <body className="font-sans">{children}</body>
     </html>
   );
 }

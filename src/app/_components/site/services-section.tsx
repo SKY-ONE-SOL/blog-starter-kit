@@ -1,5 +1,7 @@
+"use client";
+
 import type { ReactNode } from "react";
-import { services } from "@/lib/site-content";
+import { useLanguage } from "@/lib/i18n/language-context";
 import { SectionHeading } from "./section-heading";
 
 const serviceIcons: Record<string, ReactNode> = {
@@ -30,20 +32,21 @@ const serviceIcons: Record<string, ReactNode> = {
 };
 
 export function ServicesSection() {
+  const { t } = useLanguage();
+
   return (
     <section id="services" className="scroll-mt-20 bg-white py-20 sm:py-28">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <SectionHeading
-          label="Service Description"
-          title="Comprehensive Automotive Services"
-          subtitle="We provide staffing, rework, sorting, internship, shipping inspection, packaging, port inspection, and all services you need."
-          subtitleKo="작업인원 배치, 리워크, 선별, 인턴쉽, 출하검사, 포장, 항만검사 등 필요하신 모든 서비스를 제공합니다."
+          label={t.services.label}
+          title={t.services.title}
+          subtitle={t.services.subtitle}
         />
 
         <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-          {services.map((service) => (
+          {t.services.items.map((service) => (
             <div
-              key={service.title}
+              key={service.icon}
               className="group rounded-2xl border border-slate-200 bg-white p-6 shadow-card transition hover:border-sky-200 hover:shadow-card-hover"
             >
               <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-sky-100 text-sky-700 transition group-hover:bg-sky-600 group-hover:text-white">
