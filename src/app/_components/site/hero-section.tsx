@@ -1,10 +1,15 @@
 "use client";
 
 import Image from "next/image";
+import { useState } from "react";
 import { useLanguage } from "@/lib/i18n/language-context";
+
+const LOGO_PNG = "/logo.png";
+const LOGO_SVG = "/logo.svg";
 
 export function HeroSection() {
   const { t } = useLanguage();
+  const [logoSrc, setLogoSrc] = useState(LOGO_PNG);
 
   return (
     <section className="relative overflow-hidden bg-hero-gradient pt-[4.25rem]">
