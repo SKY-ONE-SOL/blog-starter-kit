@@ -8,6 +8,7 @@ const en = {
   },
   common: {
     companyName: "SKY ONE Solution",
+    wordmarkSubline: "Logistics · QC · Inspection",
     domain: "sky1usa.com",
     email: "info@sky1usa.com",
     rights: "All rights reserved.",
@@ -22,12 +23,18 @@ const en = {
     cta: "Get in Touch",
   },
   hero: {
-    badge: "Montgomery, Alabama · Automotive Logistics Hub",
-    tagline: "Total Solution for the Automobile Industry",
+    badge: "ISO-Ready Operations · Montgomery, AL",
+    tagline: "Automotive Parts Logistics & Quality Inspection",
     description:
-      "SKY ONE Solution provides total solution services based on the automobile industry. Our team brings deep expertise from the automotive sector to deliver results that meet your expectations.",
-    ctaServices: "Our Services",
-    ctaAbout: "Company Profile",
+      "We deliver precision warehouse control, inbound/outbound logistics, pre-shipment inspection, and third-party quality services for OEMs and tier suppliers across the U.S. automotive corridor.",
+    specialties: [
+      "Parts Logistics",
+      "Quality Inspection",
+      "Warehouse Control",
+      "3rd Party QC",
+    ],
+    ctaServices: "View Services",
+    ctaAbout: "Facility Overview",
     stats: [
       { value: "15", unit: "Acres", label: "Facility Area" },
       { value: "34,588", unit: "sq.ft", label: "Warehouse Space" },
@@ -76,9 +83,9 @@ const en = {
   },
   services: {
     label: "Service Description",
-    title: "Comprehensive Automotive Services",
+    title: "Integrated Logistics & Inspection Services",
     subtitle:
-      "We provide staffing, rework, sorting, internship, shipping inspection, packaging, port inspection, and all services you need.",
+      "End-to-end support for automotive parts — from warehouse operations and packaging to pre-shipment and port inspection.",
     items: [
       { title: "Warehouse Control", icon: "warehouse" },
       { title: "Logistic / Packaging", icon: "package" },
@@ -208,6 +215,7 @@ const ko: Translations = {
   },
   common: {
     companyName: "SKY ONE Solution",
+    wordmarkSubline: "물류 · 품질검사 · 검사대행",
     domain: "sky1usa.com",
     email: "info@sky1usa.com",
     rights: "All rights reserved.",
@@ -222,12 +230,13 @@ const ko: Translations = {
     cta: "문의하기",
   },
   hero: {
-    badge: "앨라바마 몽고메리 · 자동차 물류 허브",
-    tagline: "자동차 산업을 위한 토탈 솔루션",
+    badge: "체계적 운영 · Montgomery, AL",
+    tagline: "자동차 부품 물류 및 품질검사 전문",
     description:
-      "스카이 원 솔루션은 자동차 산업 관련 필요하신 모든 서비스를 제공합니다. 자동차 분야 출신의 직원들로 이 분야에 높은 이해도를 갖추고 있으며, 고객이 기대하는 결과를 실현하기 위해 최선을 다합니다.",
+      "완성차·부품 OEM 및 협력사를 대상으로 창고관리, 입출고 물류, 출하검사, 3자 품질검사 및 리워크 서비스를 제공하는 자동차 산업 전문 파트너입니다.",
+    specialties: ["부품 물류", "품질검사", "창고관리", "3자 QC"],
     ctaServices: "서비스 보기",
-    ctaAbout: "회사소개",
+    ctaAbout: "시설 개요",
     stats: [
       { value: "15", unit: "Acres", label: "시설 면적" },
       { value: "34,588", unit: "sq.ft", label: "창고 면적" },
@@ -275,9 +284,9 @@ const ko: Translations = {
   },
   services: {
     label: "서비스",
-    title: "자동차 산업 종합 서비스",
+    title: "통합 물류 · 검사 서비스",
     subtitle:
-      "작업인원 배치, 리워크, 선별, 인턴쉽, 출하검사, 포장, 항만검사 등 필요하신 모든 서비스를 제공합니다.",
+      "창고 운영부터 포장, 출하검사, 항만검사까지 자동차 부품 물류·품질 전 과정을 책임집니다.",
     items: [
       { title: "창고 관리", icon: "warehouse" },
       { title: "물류 / 포장", icon: "package" },

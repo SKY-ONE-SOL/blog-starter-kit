@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="SKY ONE">
+  <path
+    d="M84 28 C84 14 66 8 50 16 C34 24 30 40 44 50 C58 60 74 62 78 72 C84 88 68 102 48 102 C28 102 16 88 18 72"
+    fill="none"
+    stroke="#3B82D6"
+    stroke-width="17"
+    stroke-linecap="butt"
+    stroke-linejoin="round"
+  />
+</svg>

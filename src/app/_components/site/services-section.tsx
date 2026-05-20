@@ -35,7 +35,7 @@ export function ServicesSection() {
   const { t } = useLanguage();
 
   return (
-    <section id="services" className="scroll-mt-20 bg-white py-20 sm:py-28">
+    <section id="services" className="scroll-mt-[4.25rem] border-b border-steel-200 bg-white py-20 sm:py-28">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <SectionHeading
           label={t.services.label}
@@ -43,18 +43,23 @@ export function ServicesSection() {
           subtitle={t.services.subtitle}
         />
 
-        <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-          {t.services.items.map((service) => (
+        <div className="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          {t.services.items.map((service, index) => (
             <div
               key={service.icon}
-              className="group rounded-2xl border border-slate-200 bg-white p-6 shadow-card transition hover:border-sky-200 hover:shadow-card-hover"
+              className="group section-panel p-6 transition hover:shadow-card-hover"
             >
-              <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-sky-100 text-sky-700 transition group-hover:bg-sky-600 group-hover:text-white">
-                <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  {serviceIcons[service.icon]}
-                </svg>
+              <div className="flex items-start justify-between">
+                <div className="flex h-10 w-10 items-center justify-center border border-brand-200 bg-brand-50 text-brand-700 transition group-hover:bg-brand-600 group-hover:text-white">
+                  <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    {serviceIcons[service.icon]}
+                  </svg>
+                </div>
+                <span className="font-mono text-xs font-semibold text-steel-400">
+                  {String(index + 1).padStart(2, "0")}
+                </span>
               </div>
-              <h3 className="mt-4 font-semibold text-sky-950">{service.title}</h3>
+              <h3 className="mt-4 text-sm font-bold leading-snug text-navy-950">{service.title}</h3>
             </div>
           ))}
         </div>
