@@ -1,19 +1,34 @@
-import Footer from "@/app/_components/footer";
-import { CMS_NAME, HOME_OG_IMAGE_URL } from "@/lib/constants";
+import { SiteFooter } from "@/app/_components/site/site-footer";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import cn from "classnames";
-import { ThemeSwitcher } from "./_components/theme-switcher";
+import { Plus_Jakarta_Sans, DM_Sans } from "next/font/google";
 
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const jakarta = Plus_Jakarta_Sans({
+  subsets: ["latin"],
+  variable: "--font-display",
+  display: "swap",
+});
+
+const dmSans = DM_Sans({
+  subsets: ["latin"],
+  variable: "--font-sans",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
-  title: `Next.js Blog Example with ${CMS_NAME}`,
-  description: `A statically generated blog example using Next.js and ${CMS_NAME}.`,
+  title: "SKY ONE Solution | Automotive Total Solution",
+  description:
+    "SKY ONE Solution provides total solution services for the automobile industry — warehouse control, logistics, inspection, rework, and port services in Montgomery, Alabama.",
+  metadataBase: new URL("https://sky1usa.com"),
   openGraph: {
-    images: [HOME_OG_IMAGE_URL],
+    title: "SKY ONE Solution",
+    description:
+      "Total solution for the automobile industry. Warehouse, logistics, inspection & rework in Montgomery, Alabama.",
+    url: "https://sky1usa.com",
+    siteName: "SKY ONE Solution",
+    locale: "en_US",
+    type: "website",
   },
 };
 
@@ -23,46 +38,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" className={`${jakarta.variable} ${dmSans.variable}`}>
       <head>
-        <link
-          rel="apple-touch-icon"
-          sizes="180x180"
-          href="/favicon/apple-touch-icon.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="32x32"
-          href="/favicon/favicon-32x32.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="16x16"
-          href="/favicon/favicon-16x16.png"
-        />
-        <link rel="manifest" href="/favicon/site.webmanifest" />
-        <link
-          rel="mask-icon"
-          href="/favicon/safari-pinned-tab.svg"
-          color="#000000"
-        />
-        <link rel="shortcut icon" href="/favicon/favicon.ico" />
-        <meta name="msapplication-TileColor" content="#000000" />
-        <meta
-          name="msapplication-config"
-          content="/favicon/browserconfig.xml"
-        />
-        <meta name="theme-color" content="#000" />
-        <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
+        <link rel="icon" href="/favicon/favicon.ico" />
+        <meta name="theme-color" content="#121f57" />
       </head>
-      <body
-        className={cn(inter.className, "dark:bg-slate-900 dark:text-slate-400")}
-      >
-        <ThemeSwitcher />
-        <div className="min-h-screen">{children}</div>
-        <Footer />
+      <body className="font-sans">
+        {children}
+        <SiteFooter />
       </body>
     </html>
   );

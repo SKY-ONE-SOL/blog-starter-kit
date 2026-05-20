@@ -1,30 +1,31 @@
-import Container from "@/app/_components/container";
-import { HeroPost } from "@/app/_components/hero-post";
-import { Intro } from "@/app/_components/intro";
-import { MoreStories } from "@/app/_components/more-stories";
-import { getAllPosts } from "@/lib/api";
+import { SiteHeader } from "@/app/_components/site/site-header";
+import { HeroSection } from "@/app/_components/site/hero-section";
+import { AboutSection } from "@/app/_components/site/about-section";
+import { LocationSection } from "@/app/_components/site/location-section";
+import { ServicesSection } from "@/app/_components/site/services-section";
+import { MottoSection } from "@/app/_components/site/motto-section";
+import { CareersSection } from "@/app/_components/site/careers-section";
+import { WarehouseSection } from "@/app/_components/site/warehouse-section";
+import { QualitySection } from "@/app/_components/site/quality-section";
+import { AdvantagesSection } from "@/app/_components/site/advantages-section";
+import { ContactSection } from "@/app/_components/site/contact-section";
 
-export default function Index() {
-  const allPosts = getAllPosts();
-
-  const heroPost = allPosts[0];
-
-  const morePosts = allPosts.slice(1);
-
+export default function HomePage() {
   return (
-    <main>
-      <Container>
-        <Intro />
-        <HeroPost
-          title={heroPost.title}
-          coverImage={heroPost.coverImage}
-          date={heroPost.date}
-          author={heroPost.author}
-          slug={heroPost.slug}
-          excerpt={heroPost.excerpt}
-        />
-        {morePosts.length > 0 && <MoreStories posts={morePosts} />}
-      </Container>
-    </main>
+    <>
+      <SiteHeader />
+      <main>
+        <HeroSection />
+        <AboutSection />
+        <LocationSection />
+        <ServicesSection />
+        <MottoSection />
+        <CareersSection />
+        <WarehouseSection />
+        <QualitySection />
+        <AdvantagesSection />
+        <ContactSection />
+      </main>
+    </>
   );
 }
