@@ -66,9 +66,9 @@ const en = {
       },
       {
         id: "inspection",
-        title: "QUALITY INSPECTION",
+        title: "QC, INSPECTION & REWORK",
         description:
-          "Professional 3rd party inspection, pre-shipment inspection, port inspection, and yard/field/inline quality services with automotive-experienced staff.",
+          "Professional 3rd party inspection, pre-shipment and port inspection, yard/field/inline QC with automotive-experienced staff — plus rework, sorting, parts regrouping, product replacement, and value-add services for OEM and tier suppliers.",
         href: "#innovation",
       },
       {
@@ -79,11 +79,11 @@ const en = {
         href: "#innovation",
       },
       {
-        id: "rework",
-        title: "REWORK & VALUE-ADD",
+        id: "assembly",
+        title: "ASSEMBLY",
         description:
-          "Professional rework, sorting, parts regrouping, product replacement, and supply chain optimization tailored to OEM and supplier requirements.",
-        href: "#business",
+          "Precision automotive parts assembly and sub-assembly for OEM programs — line-side integration, module build, and on-time delivery aligned with your production schedule.",
+        href: "#innovation",
       },
     ],
   },
@@ -335,9 +335,9 @@ const ko: Translations = {
       },
       {
         id: "inspection",
-        title: "QUALITY INSPECTION",
+        title: "QC·검사 & 리워크",
         description:
-          "완성차·부품 3자 검사, 출하검사, 항만검사, 야드/필드/인라인 검사 등 자동차 품질 전문 인력이 수행합니다.",
+          "완성차·부품 3자 검사, 출하·항만검사, 야드/필드/인라인 QC를 자동차 품질 전문 인력이 수행하며, 리워크·선별·부품 재그룹핑·제품 교체 등 부가 서비스를 OEM·협력사 프로그램에 맞춰 제공합니다.",
         href: "#innovation",
       },
       {
@@ -348,11 +348,11 @@ const ko: Translations = {
         href: "#innovation",
       },
       {
-        id: "rework",
-        title: "REWORK & VALUE-ADD",
+        id: "assembly",
+        title: "ASSEMBLY",
         description:
-          "리워크, 선별, 부품 재그룹핑, 제품 교체 및 공급망 최적화 등 고객 맞춤 부가 서비스를 제공합니다.",
-        href: "#business",
+          "OEM 생산 프로그램을 위한 정밀 부품 조립·서브어셈블리 — 라인사이드 연동, 모듈 조립, 생산 일정에 맞춘 납품을 지원합니다.",
+        href: "#innovation",
       },
     ],
   },

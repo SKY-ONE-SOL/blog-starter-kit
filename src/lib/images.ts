@@ -31,6 +31,10 @@ export const siteImages = {
       src: "/images/automotive-parts.jpg",
       alt: "Automotive engine rework and mechanical service",
     },
+    assembly: {
+      src: "/images/news-assembly.jpg",
+      alt: "Automotive parts assembly on a production line",
+    },
   },
   news: [
     {
@@ -58,5 +62,6 @@ export const businessImageByCardId: Record<string, BusinessImageKey> = {
   logistics: "logistics",
   inspection: "inspection",
   warehouse: "warehouse",
+  assembly: "assembly",
   rework: "rework",
 };
