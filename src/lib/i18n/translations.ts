@@ -8,7 +8,7 @@ const en = {
   },
   common: {
     companyName: "SKY ONE SOLUTION",
-    wordmarkSubline: "Logistics · QC · Inspection",
+    wordmarkSubline: "TOTAL SOLUTION",
     domain: "sky1usa.com",
     email: "info@sky1usa.com",
     rights: "All rights reserved.",
@@ -23,14 +23,14 @@ const en = {
   },
   hero: {
     hook: "From expectation to execution",
-    lines: ["AUTOMOTIVE", "PARTS", "LOGISTICS", "SOLUTION"],
+    lines: ["AUTOMOTIVE", "PARTS", "TOTAL", "SOLUTION"],
     provider: "PROVIDER",
     intro:
       "The future SKY ONE SOLUTION leads is a world that grows more connected — and your value grows with it.",
     scroll: "Scroll",
-    tagline: "Automotive Parts Logistics & Quality Inspection",
+    tagline: "Automotive Parts Total Solution",
     description:
-      "We deliver precision warehouse control, inbound/outbound logistics, pre-shipment inspection, and third-party quality services for OEMs and tier suppliers across the U.S. automotive corridor.",
+      "We deliver precision warehouse control, inbound/outbound logistics, pre-shipment inspection, automotive parts assembly, and third-party quality services for OEMs and tier suppliers across the U.S. automotive corridor.",
     specialties: [
       "Parts Logistics",
       "Quality Inspection",
@@ -48,18 +48,10 @@ const en = {
   news: {
     label: "SKY ONE NOW",
     items: [
-      {
-        title: "Strategic logistics hub in Montgomery, Alabama",
-        date: "2025",
-      },
-      {
-        title: "Integrated QC & inspection for automotive tier suppliers",
-        date: "2025",
-      },
-      {
-        title: "Expanding warehouse zones for OEM partner growth",
-        date: "2025",
-      },
+      { title: "Strategic logistics hub in Montgomery, Alabama" },
+      { title: "Integrated QC & inspection for automotive tier suppliers" },
+      { title: "Expanding warehouse zones for OEM partner growth" },
+      { title: "Precision automotive parts assembly for OEM production programs" },
     ],
   },
   businessArea: {
@@ -74,9 +66,9 @@ const en = {
       },
       {
         id: "inspection",
-        title: "QUALITY INSPECTION",
+        title: "QC, INSPECTION & REWORK",
         description:
-          "Professional 3rd party inspection, pre-shipment inspection, port inspection, and yard/field/inline quality services with automotive-experienced staff.",
+          "Professional 3rd party inspection, pre-shipment and port inspection, yard/field/inline QC with automotive-experienced staff — plus rework, sorting, parts regrouping, product replacement, and value-add services for OEM and tier suppliers.",
         href: "#innovation",
       },
       {
@@ -87,11 +79,11 @@ const en = {
         href: "#innovation",
       },
       {
-        id: "rework",
-        title: "REWORK & VALUE-ADD",
+        id: "assembly",
+        title: "ASSEMBLY",
         description:
-          "Professional rework, sorting, parts regrouping, product replacement, and supply chain optimization tailored to OEM and supplier requirements.",
-        href: "#business",
+          "Precision automotive parts assembly and sub-assembly for OEM programs — line-side integration, module build, and on-time delivery aligned with your production schedule.",
+        href: "#innovation",
       },
     ],
   },
@@ -290,7 +282,7 @@ const ko: Translations = {
   },
   common: {
     companyName: "SKY ONE SOLUTION",
-    wordmarkSubline: "물류 · 품질검사 · 검사대행",
+    wordmarkSubline: "TOTAL SOLUTION",
     domain: "sky1usa.com",
     email: "info@sky1usa.com",
     rights: "All rights reserved.",
@@ -305,14 +297,14 @@ const ko: Translations = {
   },
   hero: {
     hook: "기대를 결과로",
-    lines: ["AUTOMOTIVE", "PARTS", "LOGISTICS", "SOLUTION"],
+    lines: ["AUTOMOTIVE", "PARTS", "TOTAL", "SOLUTION"],
     provider: "PROVIDER",
     intro:
       "스카이 원 솔루션이 이끄는 미래의 세계는 더욱 연결되고, 고객의 가치는 더욱 커질 것입니다.",
     scroll: "Scroll",
-    tagline: "자동차 부품 물류 및 품질검사 전문",
+    tagline: "자동차 부품 토탈 솔루션",
     description:
-      "완성차·부품 OEM 및 협력사를 대상으로 창고관리, 입출고 물류, 출하검사, 3자 품질검사 및 리워크 서비스를 제공하는 자동차 산업 전문 파트너입니다.",
+      "완성차·부품 OEM 및 협력사를 대상으로 창고관리, 입출고 물류, 출하검사, 부품 조립, 3자 품질검사 및 리워크 서비스를 제공하는 자동차 산업 전문 파트너입니다.",
     specialties: ["부품 물류", "품질검사", "창고관리", "3자 QC"],
     ctaServices: "사업영역",
     ctaAbout: "시설 소개",
@@ -325,9 +317,10 @@ const ko: Translations = {
   news: {
     label: "SKY ONE NOW",
     items: [
-      { title: "앨라바마 몽고메리 전략 물류 거점 운영", date: "2025" },
-      { title: "자동차 부품 협력사 대상 통합 QC·검사 서비스", date: "2025" },
-      { title: "OEM 파트너 성장을 위한 창고 Zone 확장", date: "2025" },
+      { title: "앨라바마 몽고메리 전략 물류 거점 운영" },
+      { title: "자동차 부품 협력사 대상 통합 QC·검사 서비스" },
+      { title: "OEM 파트너 성장을 위한 창고 Zone 확장" },
+      { title: "OEM 생산 프로그램을 위한 정밀 자동차 부품 조립" },
     ],
   },
   businessArea: {
@@ -342,9 +335,9 @@ const ko: Translations = {
       },
       {
         id: "inspection",
-        title: "QUALITY INSPECTION",
+        title: "QC·검사 & 리워크",
         description:
-          "완성차·부품 3자 검사, 출하검사, 항만검사, 야드/필드/인라인 검사 등 자동차 품질 전문 인력이 수행합니다.",
+          "완성차·부품 3자 검사, 출하·항만검사, 야드/필드/인라인 QC를 자동차 품질 전문 인력이 수행하며, 리워크·선별·부품 재그룹핑·제품 교체 등 부가 서비스를 OEM·협력사 프로그램에 맞춰 제공합니다.",
         href: "#innovation",
       },
       {
@@ -355,11 +348,11 @@ const ko: Translations = {
         href: "#innovation",
       },
       {
-        id: "rework",
-        title: "REWORK & VALUE-ADD",
+        id: "assembly",
+        title: "ASSEMBLY",
         description:
-          "리워크, 선별, 부품 재그룹핑, 제품 교체 및 공급망 최적화 등 고객 맞춤 부가 서비스를 제공합니다.",
-        href: "#business",
+          "OEM 생산 프로그램을 위한 정밀 부품 조립·서브어셈블리 — 라인사이드 연동, 모듈 조립, 생산 일정에 맞춘 납품을 지원합니다.",
+        href: "#innovation",
       },
     ],
   },
