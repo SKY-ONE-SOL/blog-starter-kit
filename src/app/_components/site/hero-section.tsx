@@ -1,73 +1,87 @@
 "use client";
 
 import { useLanguage } from "@/lib/i18n/language-context";
+import { siteImages } from "@/lib/images";
+import { SectionImage } from "./section-image";
 
 export function HeroSection() {
   const { t } = useLanguage();
 
   return (
-    <section className="relative overflow-hidden bg-sky-950 pt-16">
-      <div
-        className="absolute inset-0 opacity-30"
-        style={{
-          backgroundImage:
-            "radial-gradient(circle at 20% 50%, #3374ff 0%, transparent 50%), radial-gradient(circle at 80% 20%, #1a52f5 0%, transparent 40%)",
-        }}
-      />
-      <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff08_1px,transparent_1px),linear-gradient(to_bottom,#ffffff08_1px,transparent_1px)] bg-[size:4rem_4rem]" />
+    <section className="relative flex min-h-screen flex-col justify-end overflow-hidden bg-navy-950">
+      <div className="absolute inset-0">
+        <SectionImage
+          src={siteImages.hero.src}
+          alt={siteImages.hero.alt}
+          priority
+          sizes="100vw"
+          className="scale-105 object-cover"
+        />
+      </div>
+      <div className="absolute inset-0 bg-navy-950/75" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_20%_50%,rgba(59,130,214,0.2),transparent_55%)]" />
+      <div className="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/50 to-navy-950/30" />
 
-      <div className="relative mx-auto max-w-6xl px-4 pb-24 pt-20 sm:px-6 sm:pb-32 sm:pt-28 lg:px-8">
-        <div className="max-w-3xl">
-          <p className="inline-flex items-center gap-2 rounded-full border border-sky-400/30 bg-sky-900/50 px-4 py-1.5 text-sm text-sky-200">
-            <span className="h-2 w-2 rounded-full bg-emerald-400" />
-            {t.hero.badge}
-          </p>
+      <div className="relative mx-auto w-full max-w-[1400px] px-6 pb-16 pt-32 lg:px-10 lg:pb-24 lg:pt-40">
+        <p
+          className="hero-line text-sm font-medium uppercase tracking-[0.35em] text-brand-300"
+          style={{ animationDelay: "0.1s" }}
+        >
+          {t.hero.hook}
+        </p>
 
-          <h1 className="mt-8 font-display text-4xl font-bold leading-tight tracking-tight text-white sm:text-5xl lg:text-6xl">
-            {t.common.companyName}
-          </h1>
-
-          <p className="mt-6 text-xl leading-relaxed text-sky-100 sm:text-2xl">
-            {t.hero.tagline}
-          </p>
-
-          <p className="mt-8 max-w-2xl text-base leading-relaxed text-sky-100/90 sm:text-lg">
-            {t.hero.description}
-          </p>
-
-          <div className="mt-10 flex flex-wrap gap-4">
-            <a
-              href="#services"
-              className="rounded-full bg-sky-500 px-8 py-3 text-sm font-semibold text-white shadow-lg shadow-sky-500/25 transition hover:bg-sky-400"
+        <div className="mt-6 space-y-1 md:mt-10">
+          {t.hero.lines.map((line, i) => (
+            <h1
+              key={line}
+              className="hero-line font-display text-[clamp(2.5rem,8vw,6.5rem)] font-bold leading-[0.95] tracking-tight text-white"
+              style={{ animationDelay: `${0.2 + i * 0.12}s` }}
             >
-              {t.hero.ctaServices}
-            </a>
-            <a
-              href="#about"
-              className="rounded-full border border-sky-400/40 px-8 py-3 text-sm font-semibold text-sky-100 transition hover:border-sky-300 hover:bg-sky-900/50"
-            >
-              {t.hero.ctaAbout}
-            </a>
-          </div>
+              {line}
+            </h1>
+          ))}
+          <p
+            className="hero-line pt-2 font-display text-[clamp(1.5rem,4vw,3rem)] font-bold tracking-tight text-brand-400"
+            style={{ animationDelay: "0.65s" }}
+          >
+            {t.hero.provider}
+          </p>
         </div>
 
-        <div className="mt-16 grid gap-4 sm:grid-cols-3">
-          {t.hero.stats.map((stat) => (
-            <div
-              key={stat.label}
-              className="rounded-2xl border border-white/10 bg-white/5 px-6 py-5 backdrop-blur-sm"
-            >
-              <p className="font-display text-3xl font-bold text-white">
-                {stat.value}
-                {stat.unit && (
-                  <span className="ml-1 text-lg font-medium text-sky-300">{stat.unit}</span>
-                )}
-              </p>
-              <p className="mt-1 text-sm text-sky-200/80">{stat.label}</p>
-            </div>
-          ))}
+        <p
+          className="hero-line mt-10 max-w-2xl text-base leading-relaxed text-steel-200 md:text-lg"
+          style={{ animationDelay: "0.85s" }}
+        >
+          {t.hero.intro}
+        </p>
+
+        <div
+          className="hero-line mt-12 flex flex-wrap gap-4"
+          style={{ animationDelay: "1s" }}
+        >
+          <a
+            href="#business"
+            className="bg-brand-600 px-8 py-3.5 text-sm font-semibold uppercase tracking-widest text-white transition hover:bg-brand-500"
+          >
+            {t.hero.ctaServices}
+          </a>
+          <a
+            href="#about"
+            className="border border-white/30 px-8 py-3.5 text-sm font-semibold uppercase tracking-widest text-white transition hover:bg-white/10"
+          >
+            {t.hero.ctaAbout}
+          </a>
         </div>
       </div>
+
+      <a
+        href="#news"
+        className="absolute bottom-8 left-1/2 z-10 flex -translate-x-1/2 flex-col items-center gap-2 text-white/50 transition hover:text-white"
+        aria-label={t.hero.scroll}
+      >
+        <span className="text-[10px] uppercase tracking-[0.3em]">{t.hero.scroll}</span>
+        <span className="block h-10 w-px animate-pulse bg-white/40" />
+      </a>
     </section>
   );
 }

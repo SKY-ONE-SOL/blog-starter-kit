@@ -1,57 +1,70 @@
 "use client";
 
 import { useLanguage } from "@/lib/i18n/language-context";
-import { SectionHeading } from "./section-heading";
+import { siteImages } from "@/lib/images";
+import { SectionImage } from "./section-image";
 
 export function AboutSection() {
   const { t } = useLanguage();
   const loc = t.about.location;
 
   return (
-    <section id="about" className="scroll-mt-20 bg-white py-20 sm:py-28">
-      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-        <SectionHeading
-          label={t.about.label}
-          title={t.about.title}
-          subtitle={t.about.subtitle}
-        />
+    <section id="about" className="scroll-mt-20 bg-steel-100 py-16 md:py-28">
+      <div className="mx-auto max-w-[1400px] px-6 lg:px-10">
+        <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
+          <div>
+            <p className="glovis-section-label">{t.about.label}</p>
+            <h2 className="glovis-section-title mt-4">{t.about.title}</h2>
+            <p className="mt-6 text-lg leading-relaxed text-steel-600">{t.about.subtitle}</p>
 
-        <div className="mt-14 grid gap-8 lg:grid-cols-2">
-          <div className="rounded-2xl border border-slate-200 bg-slate-50 p-8 shadow-card">
-            <h3 className="font-display text-xl font-semibold text-sky-950">
-              {t.about.facilityTitle}
-            </h3>
-            <dl className="mt-6 space-y-4">
-              <div className="flex justify-between border-b border-slate-200 pb-3">
-                <dt className="text-sm font-medium text-slate-500">{t.about.fields.location}</dt>
-                <dd className="text-sm font-semibold text-slate-900">{loc.address}</dd>
+            <dl className="mt-10 space-y-6 border-t border-steel-300 pt-10">
+              <div>
+                <dt className="text-xs font-bold uppercase tracking-wider text-steel-500">
+                  {t.about.fields.location}
+                </dt>
+                <dd className="mt-1 text-lg font-semibold text-steel-900">{loc.address}</dd>
               </div>
-              <div className="flex justify-between border-b border-slate-200 pb-3">
-                <dt className="text-sm font-medium text-slate-500">{t.about.fields.area}</dt>
-                <dd className="text-sm font-semibold text-slate-900">{loc.area}</dd>
+              <div>
+                <dt className="text-xs font-bold uppercase tracking-wider text-steel-500">
+                  {t.about.fields.area}
+                </dt>
+                <dd className="mt-1 text-lg font-semibold text-steel-900">{loc.area}</dd>
               </div>
-              <div className="flex justify-between">
-                <dt className="text-sm font-medium text-slate-500">{t.about.fields.warehouse}</dt>
-                <dd className="text-sm font-semibold text-slate-900">{loc.warehouse}</dd>
+              <div>
+                <dt className="text-xs font-bold uppercase tracking-wider text-steel-500">
+                  {t.about.fields.warehouse}
+                </dt>
+                <dd className="mt-1 text-lg font-semibold text-steel-900">{loc.warehouse}</dd>
               </div>
             </dl>
           </div>
 
-          <div className="space-y-4">
-            {loc.zones.map((zone) => (
-              <div
-                key={zone.id}
-                className="flex gap-4 rounded-2xl border border-slate-200 bg-white p-6 shadow-card transition hover:shadow-card-hover"
-              >
-                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-sky-100 font-display text-lg font-bold text-sky-700">
-                  {zone.id}
+          <div className="flex flex-col gap-4">
+            <div className="relative min-h-[280px] overflow-hidden lg:min-h-[360px]">
+              <SectionImage
+                src={siteImages.facility.src}
+                alt={siteImages.facility.alt}
+                sizes="(max-width: 1024px) 100vw, 50vw"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-navy-950/40 to-transparent" />
+            </div>
+
+            <div className="grid gap-3 sm:grid-cols-3 lg:grid-cols-1">
+              {loc.zones.map((zone) => (
+                <div
+                  key={zone.id}
+                  className="flex items-start gap-4 border border-steel-200 bg-white p-5"
+                >
+                  <span className="flex h-11 w-11 shrink-0 items-center justify-center bg-brand-600 font-display text-lg font-bold text-white">
+                    {zone.id}
+                  </span>
+                  <div>
+                    <h4 className="font-bold text-steel-900">{zone.label}</h4>
+                    <p className="mt-1 text-sm text-steel-600">{zone.description}</p>
+                  </div>
                 </div>
-                <div>
-                  <h4 className="font-semibold text-sky-950">{zone.label}</h4>
-                  <p className="mt-1 text-sm text-slate-600">{zone.description}</p>
-                </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </div>

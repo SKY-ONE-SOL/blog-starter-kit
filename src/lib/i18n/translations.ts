@@ -7,32 +7,114 @@ const en = {
     htmlLang: "en",
   },
   common: {
-    companyName: "SKY ONE Solution",
+    companyName: "SKY ONE SOLUTION",
+    wordmarkSubline: "Logistics · QC · Inspection",
     domain: "sky1usa.com",
     email: "info@sky1usa.com",
     rights: "All rights reserved.",
   },
   nav: {
+    business: "Business",
+    network: "Network",
+    innovation: "Innovation",
     about: "About",
-    location: "Location",
-    services: "Services",
-    careers: "Capabilities",
-    quality: "Quality",
     contact: "Contact",
-    cta: "Get in Touch",
+    cta: "Contact Us",
   },
   hero: {
-    badge: "Montgomery, Alabama · Automotive Logistics Hub",
-    tagline: "Total Solution for the Automobile Industry",
+    hook: "From expectation to execution",
+    lines: ["AUTOMOTIVE", "PARTS", "LOGISTICS", "SOLUTION"],
+    provider: "PROVIDER",
+    intro:
+      "The future SKY ONE SOLUTION leads is a world that grows more connected — and your value grows with it.",
+    scroll: "Scroll",
+    tagline: "Automotive Parts Logistics & Quality Inspection",
     description:
-      "SKY ONE Solution provides total solution services based on the automobile industry. Our team brings deep expertise from the automotive sector to deliver results that meet your expectations.",
-    ctaServices: "Our Services",
-    ctaAbout: "Company Profile",
+      "We deliver precision warehouse control, inbound/outbound logistics, pre-shipment inspection, and third-party quality services for OEMs and tier suppliers across the U.S. automotive corridor.",
+    specialties: [
+      "Parts Logistics",
+      "Quality Inspection",
+      "Warehouse Control",
+      "3rd Party QC",
+    ],
+    ctaServices: "Business Area",
+    ctaAbout: "Our Facility",
     stats: [
       { value: "15", unit: "Acres", label: "Facility Area" },
       { value: "34,588", unit: "sq.ft", label: "Warehouse Space" },
       { value: "24/7", unit: "", label: "Ready to Serve" },
     ],
+  },
+  news: {
+    label: "SKY ONE NOW",
+    items: [
+      {
+        title: "Strategic logistics hub in Montgomery, Alabama",
+        date: "2025",
+      },
+      {
+        title: "Integrated QC & inspection for automotive tier suppliers",
+        date: "2025",
+      },
+      {
+        title: "Expanding warehouse zones for OEM partner growth",
+        date: "2025",
+      },
+    ],
+  },
+  businessArea: {
+    label: "Business Area",
+    cards: [
+      {
+        id: "logistics",
+        title: "LOGISTICS",
+        description:
+          "We provide total logistics services including transportation, warehousing, inbound/outbound control, packaging, and customer delivery management for the automotive industry.",
+        href: "#network",
+      },
+      {
+        id: "inspection",
+        title: "QUALITY INSPECTION",
+        description:
+          "Professional 3rd party inspection, pre-shipment inspection, port inspection, and yard/field/inline quality services with automotive-experienced staff.",
+        href: "#innovation",
+      },
+      {
+        id: "warehouse",
+        title: "WAREHOUSE",
+        description:
+          "Systematic warehouse operations from receiving and put-away to picking, packing, and shipping — with FIFO management and real-time system control.",
+        href: "#innovation",
+      },
+      {
+        id: "rework",
+        title: "REWORK & VALUE-ADD",
+        description:
+          "Professional rework, sorting, parts regrouping, product replacement, and supply chain optimization tailored to OEM and supplier requirements.",
+        href: "#business",
+      },
+    ],
+  },
+  networkSection: {
+    label: "Global Network",
+    title: "For More Meaningful Connections",
+    subtitle: "Strategically positioned in the U.S. automotive manufacturing corridor.",
+    stats: [
+      { value: "15", suffix: "Acres", label: "Facility site" },
+      { value: "34,588", suffix: "sq.ft", label: "Warehouse" },
+      { value: "5", suffix: "miles", label: "To HMMA" },
+      { value: "24/7", suffix: "", label: "Operations" },
+    ],
+  },
+  innovationSection: {
+    label: "Innovation",
+    title: "Leading quality & digital warehouse operations",
+    subtitle:
+      "With professional automotive quality staff and systematic process control, we support digital transformation of logistics and inspection operations.",
+    cta: "View quality systems",
+  },
+  marquee: {
+    text: "Automotive Parts Logistics & Quality Solution Provider",
   },
   about: {
     label: "Company Profile",
@@ -76,9 +158,9 @@ const en = {
   },
   services: {
     label: "Service Description",
-    title: "Comprehensive Automotive Services",
+    title: "Integrated Logistics & Inspection Services",
     subtitle:
-      "We provide staffing, rework, sorting, internship, shipping inspection, packaging, port inspection, and all services you need.",
+      "End-to-end support for automotive parts — from warehouse operations and packaging to pre-shipment and port inspection.",
     items: [
       { title: "Warehouse Control", icon: "warehouse" },
       { title: "Logistic / Packaging", icon: "package" },
@@ -192,7 +274,7 @@ const en = {
     label: "Contact",
     title: "Thank You",
     subtitle:
-      "We look forward to partnering with you. Reach out to discuss how SKY ONE Solution can support your operations.",
+      "We look forward to partnering with you. Reach out to discuss how SKY ONE SOLUTION can support your operations.",
   },
   footer: {
     location: "Location",
@@ -207,32 +289,100 @@ const ko: Translations = {
     htmlLang: "ko",
   },
   common: {
-    companyName: "SKY ONE Solution",
+    companyName: "SKY ONE SOLUTION",
+    wordmarkSubline: "물류 · 품질검사 · 검사대행",
     domain: "sky1usa.com",
     email: "info@sky1usa.com",
     rights: "All rights reserved.",
   },
   nav: {
+    business: "사업영역",
+    network: "네트워크",
+    innovation: "혁신",
     about: "회사소개",
-    location: "위치",
-    services: "서비스",
-    careers: "사업영역",
-    quality: "품질",
     contact: "문의",
     cta: "문의하기",
   },
   hero: {
-    badge: "앨라바마 몽고메리 · 자동차 물류 허브",
-    tagline: "자동차 산업을 위한 토탈 솔루션",
+    hook: "기대를 결과로",
+    lines: ["AUTOMOTIVE", "PARTS", "LOGISTICS", "SOLUTION"],
+    provider: "PROVIDER",
+    intro:
+      "스카이 원 솔루션이 이끄는 미래의 세계는 더욱 연결되고, 고객의 가치는 더욱 커질 것입니다.",
+    scroll: "Scroll",
+    tagline: "자동차 부품 물류 및 품질검사 전문",
     description:
-      "스카이 원 솔루션은 자동차 산업 관련 필요하신 모든 서비스를 제공합니다. 자동차 분야 출신의 직원들로 이 분야에 높은 이해도를 갖추고 있으며, 고객이 기대하는 결과를 실현하기 위해 최선을 다합니다.",
-    ctaServices: "서비스 보기",
-    ctaAbout: "회사소개",
+      "완성차·부품 OEM 및 협력사를 대상으로 창고관리, 입출고 물류, 출하검사, 3자 품질검사 및 리워크 서비스를 제공하는 자동차 산업 전문 파트너입니다.",
+    specialties: ["부품 물류", "품질검사", "창고관리", "3자 QC"],
+    ctaServices: "사업영역",
+    ctaAbout: "시설 소개",
     stats: [
       { value: "15", unit: "Acres", label: "시설 면적" },
       { value: "34,588", unit: "sq.ft", label: "창고 면적" },
       { value: "24/7", unit: "", label: "상시 대응" },
     ],
+  },
+  news: {
+    label: "SKY ONE NOW",
+    items: [
+      { title: "앨라바마 몽고메리 전략 물류 거점 운영", date: "2025" },
+      { title: "자동차 부품 협력사 대상 통합 QC·검사 서비스", date: "2025" },
+      { title: "OEM 파트너 성장을 위한 창고 Zone 확장", date: "2025" },
+    ],
+  },
+  businessArea: {
+    label: "Business Area",
+    cards: [
+      {
+        id: "logistics",
+        title: "LOGISTICS",
+        description:
+          "운송, 창고, 입출고 관리, 포장, 국제물류, 고객 납품 관리 등 자동차 산업을 위한 토탈 물류 서비스를 제공합니다.",
+        href: "#network",
+      },
+      {
+        id: "inspection",
+        title: "QUALITY INSPECTION",
+        description:
+          "완성차·부품 3자 검사, 출하검사, 항만검사, 야드/필드/인라인 검사 등 자동차 품질 전문 인력이 수행합니다.",
+        href: "#innovation",
+      },
+      {
+        id: "warehouse",
+        title: "WAREHOUSE",
+        description:
+          "입고·적치부터 피킹, 포장, 출고까지 선입선출 기반의 체계적 창고 운영과 시스템 연동을 제공합니다.",
+        href: "#innovation",
+      },
+      {
+        id: "rework",
+        title: "REWORK & VALUE-ADD",
+        description:
+          "리워크, 선별, 부품 재그룹핑, 제품 교체 및 공급망 최적화 등 고객 맞춤 부가 서비스를 제공합니다.",
+        href: "#business",
+      },
+    ],
+  },
+  networkSection: {
+    label: "Global Network",
+    title: "더 의미 있는 연결을 위해",
+    subtitle: "미국 자동차 제조 벨트 중심의 전략적 입지",
+    stats: [
+      { value: "15", suffix: "Acres", label: "시설 부지" },
+      { value: "34,588", suffix: "sq.ft", label: "창고" },
+      { value: "5", suffix: "miles", label: "HMMA 거리" },
+      { value: "24/7", suffix: "", label: "운영" },
+    ],
+  },
+  innovationSection: {
+    label: "Innovation",
+    title: "품질 혁신 & 디지털 창고 운영",
+    subtitle:
+      "자동차 품질 전문 인력과 체계적 프로세스로 물류·검사 운영의 디지털 전환을 지원합니다.",
+    cta: "품질 시스템 보기",
+  },
+  marquee: {
+    text: "Automotive Parts Logistics & Quality Solution Provider",
   },
   about: {
     label: "회사소개",
@@ -275,9 +425,9 @@ const ko: Translations = {
   },
   services: {
     label: "서비스",
-    title: "자동차 산업 종합 서비스",
+    title: "통합 물류 · 검사 서비스",
     subtitle:
-      "작업인원 배치, 리워크, 선별, 인턴쉽, 출하검사, 포장, 항만검사 등 필요하신 모든 서비스를 제공합니다.",
+      "창고 운영부터 포장, 출하검사, 항만검사까지 자동차 부품 물류·품질 전 과정을 책임집니다.",
     items: [
       { title: "창고 관리", icon: "warehouse" },
       { title: "물류 / 포장", icon: "package" },
@@ -374,7 +524,7 @@ const ko: Translations = {
   contact: {
     label: "문의",
     title: "감사합니다",
-    subtitle: "함께 성장할 파트너가 되겠습니다. SKY ONE Solution에 문의해 주세요.",
+    subtitle: "함께 성장할 파트너가 되겠습니다. SKY ONE SOLUTION에 문의해 주세요.",
   },
   footer: {
     location: "위치",
@@ -385,10 +535,9 @@ const ko: Translations = {
 export const translations: Record<Locale, Translations> = { en, ko };
 
 export const navItems = [
+  { href: "#business", key: "business" as const },
+  { href: "#network", key: "network" as const },
+  { href: "#innovation", key: "innovation" as const },
   { href: "#about", key: "about" as const },
-  { href: "#location", key: "location" as const },
-  { href: "#services", key: "services" as const },
-  { href: "#careers", key: "careers" as const },
-  { href: "#quality", key: "quality" as const },
   { href: "#contact", key: "contact" as const },
 ];

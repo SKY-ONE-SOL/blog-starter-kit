@@ -1,51 +1,62 @@
 "use client";
 
 import { useLanguage } from "@/lib/i18n/language-context";
+import { navItems } from "@/lib/i18n/translations";
+import { CompanyLogo } from "./company-logo";
 
 export function SiteFooter() {
   const { t } = useLanguage();
 
   return (
-    <footer className="border-t border-slate-200 bg-slate-50">
-      <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6 lg:px-8">
-        <div className="flex flex-col gap-8 md:flex-row md:items-start md:justify-between">
+    <footer className="bg-steel-900 text-steel-400">
+      <div className="mx-auto max-w-[1400px] px-6 py-16 lg:px-10">
+        <div className="grid gap-12 lg:grid-cols-[1.2fr_1fr_1fr]">
           <div>
-            <div className="flex items-center gap-2">
-              <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-sky-700 text-sm font-bold text-white">
-                S1
-              </span>
-              <span className="font-display text-lg font-semibold text-sky-950">
-                {t.common.companyName}
-              </span>
-            </div>
-            <p className="mt-3 max-w-sm text-sm text-slate-600">{t.hero.tagline}</p>
+            <CompanyLogo
+              size={48}
+              wordmark={t.common.companyName}
+              subline={t.common.wordmarkSubline}
+              variant="light"
+            />
+            <p className="mt-6 max-w-sm text-sm leading-relaxed">{t.hero.intro}</p>
           </div>
 
-          <div className="grid gap-6 sm:grid-cols-2">
-            <div>
-              <h3 className="text-sm font-semibold uppercase tracking-wider text-slate-900">
-                {t.footer.location}
-              </h3>
-              <p className="mt-2 text-sm text-slate-600">{t.about.location.address}</p>
-              <p className="mt-1 text-sm text-slate-600">{t.about.location.area}</p>
-            </div>
-            <div>
-              <h3 className="text-sm font-semibold uppercase tracking-wider text-slate-900">
-                {t.footer.contact}
-              </h3>
-              <a
-                href={`mailto:${t.common.email}`}
-                className="mt-2 block text-sm text-sky-700 hover:text-sky-600"
-              >
-                {t.common.email}
-              </a>
-              <p className="mt-2 text-sm text-slate-600">{t.common.domain}</p>
-            </div>
+          <div>
+            <h3 className="text-xs font-bold uppercase tracking-[0.2em] text-white">Menu</h3>
+            <ul className="mt-4 space-y-2">
+              {navItems.map((item) => (
+                <li key={item.href}>
+                  <a
+                    href={item.href}
+                    className="text-sm transition hover:text-white"
+                  >
+                    {t.nav[item.key]}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="text-xs font-bold uppercase tracking-[0.2em] text-white">
+              {t.footer.contact}
+            </h3>
+            <a
+              href={`mailto:${t.common.email}`}
+              className="mt-4 block text-sm text-brand-300 hover:text-brand-200"
+            >
+              {t.common.email}
+            </a>
+            <p className="mt-4 text-sm">{t.about.location.address}</p>
+            <p className="mt-1 text-sm">{t.common.domain}</p>
           </div>
         </div>
 
-        <div className="mt-10 border-t border-slate-200 pt-6 text-center text-sm text-slate-500">
-          © {new Date().getFullYear()} {t.common.companyName}. {t.common.rights}
+        <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-steel-700 pt-8 text-xs uppercase tracking-wider sm:flex-row">
+          <p>
+            © {new Date().getFullYear()} {t.common.companyName}. {t.common.rights}
+          </p>
+          <p className="text-steel-500">Montgomery, Alabama · USA</p>
         </div>
       </div>
     </footer>
