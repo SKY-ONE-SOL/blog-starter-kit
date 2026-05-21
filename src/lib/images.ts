@@ -32,7 +32,7 @@ export const siteImages = {
       alt: "Automotive engine rework and mechanical service",
     },
     assembly: {
-      src: "/images/news-assembly.jpg",
+      src: "/images/business-assembly.jpg",
       alt: "Automotive parts assembly on a production line",
     },
   },
