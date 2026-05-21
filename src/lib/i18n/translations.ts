@@ -8,7 +8,7 @@ const en = {
   },
   common: {
     companyName: "SKY ONE SOLUTION",
-    wordmarkSubline: "Logistics · QC · Inspection",
+    wordmarkSubline: "TOTAL SOLUTION",
     domain: "sky1usa.com",
     email: "info@sky1usa.com",
     rights: "All rights reserved.",
@@ -290,7 +290,7 @@ const ko: Translations = {
   },
   common: {
     companyName: "SKY ONE SOLUTION",
-    wordmarkSubline: "물류 · 품질검사 · 검사대행",
+    wordmarkSubline: "TOTAL SOLUTION",
     domain: "sky1usa.com",
     email: "info@sky1usa.com",
     rights: "All rights reserved.",
