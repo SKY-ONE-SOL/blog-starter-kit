@@ -1,6 +1,8 @@
 "use client";
 
 import { useLanguage } from "@/lib/i18n/language-context";
+import { siteImages } from "@/lib/images";
+import { SectionImage } from "./section-image";
 
 export function NetworkSection() {
   const { t } = useLanguage();
@@ -8,10 +10,28 @@ export function NetworkSection() {
 
   return (
     <section id="network" className="scroll-mt-20 bg-white py-16 md:py-28">
+      <div className="relative mb-16 h-56 overflow-hidden md:h-72 lg:h-80">
+        <SectionImage
+          src={siteImages.network.src}
+          alt={siteImages.network.alt}
+          sizes="100vw"
+          className="object-cover"
+        />
+        <div className="absolute inset-0 bg-navy-950/55" />
+        <div className="absolute inset-0 flex items-center">
+          <div className="mx-auto w-full max-w-[1400px] px-6 lg:px-10">
+            <p className="text-xs font-bold uppercase tracking-[0.28em] text-brand-300">
+              {t.networkSection.label}
+            </p>
+            <h2 className="mt-3 font-display text-3xl font-bold text-white md:text-4xl">
+              {t.networkSection.title}
+            </h2>
+          </div>
+        </div>
+      </div>
+
       <div className="mx-auto max-w-[1400px] px-6 lg:px-10">
-        <p className="glovis-section-label">{t.networkSection.label}</p>
-        <h2 className="glovis-section-title mt-4">{t.networkSection.title}</h2>
-        <p className="mt-6 max-w-2xl text-lg text-steel-600">{t.networkSection.subtitle}</p>
+        <p className="max-w-2xl text-lg text-steel-600">{t.networkSection.subtitle}</p>
 
         <div className="mt-16 grid grid-cols-2 gap-8 border-y border-steel-200 py-12 lg:grid-cols-4">
           {t.networkSection.stats.map((stat) => (

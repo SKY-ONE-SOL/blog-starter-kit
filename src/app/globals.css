@@ -26,11 +26,7 @@
   }
 
   .business-card {
-    @apply relative flex min-h-[22rem] flex-col justify-end overflow-hidden p-8 md:min-h-[28rem] md:p-10;
-  }
-
-  .business-card-bg {
-    @apply absolute inset-0 bg-gradient-to-br from-navy-900 via-brand-900 to-brand-700 transition duration-500 group-hover:scale-105;
+    @apply relative flex flex-col justify-end overflow-hidden p-8 md:p-10;
   }
 }
 

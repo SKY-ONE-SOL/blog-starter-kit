@@ -1,13 +1,8 @@
 "use client";
 
 import { useLanguage } from "@/lib/i18n/language-context";
-
-const cardGradients = [
-  "from-slate-900 via-brand-950 to-brand-800",
-  "from-navy-950 via-brand-900 to-brand-700",
-  "from-brand-950 via-navy-900 to-slate-800",
-  "from-navy-900 via-brand-800 to-brand-600",
-];
+import { businessImageByCardId, siteImages } from "@/lib/images";
+import { SectionImage } from "./section-image";
 
 export function BusinessAreaSection() {
   const { t } = useLanguage();
@@ -20,30 +15,40 @@ export function BusinessAreaSection() {
         <p className="mt-6 max-w-2xl text-steel-600">{t.hero.description}</p>
 
         <div className="mt-14 grid gap-4 md:grid-cols-2 lg:gap-5">
-          {t.businessArea.cards.map((card, i) => (
-            <a
-              key={card.id}
-              href={card.href}
-              className="group business-card"
-            >
-              <div
-                className={`business-card-bg bg-gradient-to-br ${cardGradients[i % cardGradients.length]}`}
-              />
-              <div className="absolute inset-0 bg-black/20 transition group-hover:bg-black/10" />
-              <div className="relative">
-                <h3 className="font-display text-2xl font-bold tracking-tight text-white md:text-3xl">
-                  {card.title}
-                </h3>
-                <p className="mt-4 max-w-md text-sm leading-relaxed text-steel-200 md:text-base">
-                  {card.description}
-                </p>
-                <span className="mt-8 inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.2em] text-white/80 transition group-hover:text-white">
-                  Learn more
-                  <span aria-hidden>→</span>
-                </span>
-              </div>
-            </a>
-          ))}
+          {t.businessArea.cards.map((card) => {
+            const imageKey = businessImageByCardId[card.id];
+            const img = siteImages.business[imageKey];
+
+            return (
+              <a
+                key={card.id}
+                href={card.href}
+                className="group business-card min-h-[24rem] md:min-h-[28rem]"
+              >
+                <div className="absolute inset-0">
+                  <SectionImage
+                    src={img.src}
+                    alt={img.alt}
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                    className="transition duration-700 group-hover:scale-105"
+                  />
+                </div>
+                <div className="absolute inset-0 bg-gradient-to-t from-navy-950/95 via-navy-950/60 to-navy-950/30 transition group-hover:via-navy-950/50" />
+                <div className="relative">
+                  <h3 className="font-display text-2xl font-bold tracking-tight text-white md:text-3xl">
+                    {card.title}
+                  </h3>
+                  <p className="mt-4 max-w-md text-sm leading-relaxed text-steel-200 md:text-base">
+                    {card.description}
+                  </p>
+                  <span className="mt-8 inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.2em] text-white/80 transition group-hover:text-white">
+                    Learn more
+                    <span aria-hidden>→</span>
+                  </span>
+                </div>
+              </a>
+            );
+          })}
         </div>
       </div>
     </section>

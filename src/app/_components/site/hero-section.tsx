@@ -1,15 +1,26 @@
 "use client";
 
 import { useLanguage } from "@/lib/i18n/language-context";
+import { siteImages } from "@/lib/images";
+import { SectionImage } from "./section-image";
 
 export function HeroSection() {
   const { t } = useLanguage();
 
   return (
     <section className="relative flex min-h-screen flex-col justify-end overflow-hidden bg-navy-950">
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_20%_50%,rgba(59,130,214,0.25),transparent_50%),radial-gradient(ellipse_at_80%_20%,rgba(37,99,184,0.2),transparent_45%)]" />
-      <div className="absolute inset-0 bg-grid-industrial bg-grid opacity-[0.15]" />
-      <div className="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/40 to-navy-950/20" />
+      <div className="absolute inset-0">
+        <SectionImage
+          src={siteImages.hero.src}
+          alt={siteImages.hero.alt}
+          priority
+          sizes="100vw"
+          className="scale-105 object-cover"
+        />
+      </div>
+      <div className="absolute inset-0 bg-navy-950/75" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_20%_50%,rgba(59,130,214,0.2),transparent_55%)]" />
+      <div className="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/50 to-navy-950/30" />
 
       <div className="relative mx-auto w-full max-w-[1400px] px-6 pb-16 pt-32 lg:px-10 lg:pb-24 lg:pt-40">
         <p
@@ -38,7 +49,7 @@ export function HeroSection() {
         </div>
 
         <p
-          className="hero-line mt-10 max-w-2xl text-base leading-relaxed text-steel-300 md:text-lg"
+          className="hero-line mt-10 max-w-2xl text-base leading-relaxed text-steel-200 md:text-lg"
           style={{ animationDelay: "0.85s" }}
         >
           {t.hero.intro}
@@ -65,7 +76,7 @@ export function HeroSection() {
 
       <a
         href="#news"
-        className="absolute bottom-8 left-1/2 flex -translate-x-1/2 flex-col items-center gap-2 text-white/50 transition hover:text-white"
+        className="absolute bottom-8 left-1/2 z-10 flex -translate-x-1/2 flex-col items-center gap-2 text-white/50 transition hover:text-white"
         aria-label={t.hero.scroll}
       >
         <span className="text-[10px] uppercase tracking-[0.3em]">{t.hero.scroll}</span>
