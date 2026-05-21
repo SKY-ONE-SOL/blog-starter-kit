@@ -31,7 +31,7 @@ export const siteImages = {
   news: [
     {
       src: "/images/news-facility.jpg",
-      alt: "Industrial warehouse exterior with loading docks and trucks",
+      alt: "World map showing Montgomery, Alabama as a global logistics hub with routes",
     },
     {
       src: "/images/news-quality.jpg",

@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-label="Global logistics hub from Montgomery, Alabama">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0c1220"/>
+      <stop offset="100%" stop-color="#1a335f"/>
+    </linearGradient>
+    <radialGradient id="hubGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#3B82D6" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#3B82D6" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#60a5fa"/>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#bg)"/>
+
+  <!-- Grid -->
+  <g stroke="#1e3a5f" stroke-width="0.5" opacity="0.4">
+    <path d="M0 112.5 H1200 M0 225 H1200 M0 337.5 H1200 M0 450 H1200 M0 562.5 H1200"/>
+    <path d="M150 0 V675 M300 0 V675 M450 0 V675 M600 0 V675 M750 0 V675 M900 0 V675 M1050 0 V675"/>
+  </g>
+
+  <!-- Simplified world continents -->
+  <g fill="#2d4a6f" opacity="0.85">
+    <!-- North America -->
+    <path d="M80 120 L220 90 L320 100 L380 130 L420 180 L400 240 L350 280 L280 300 L200 280 L120 240 L70 190 Z"/>
+    <!-- South America -->
+    <path d="M280 300 L340 310 L380 360 L370 450 L320 520 L270 500 L250 420 L260 340 Z"/>
+    <!-- Europe -->
+    <path d="M520 110 L600 95 L640 120 L630 160 L580 180 L530 170 Z"/>
+    <!-- Africa -->
+    <path d="M530 180 L620 170 L660 220 L650 340 L600 400 L540 380 L520 280 Z"/>
+    <!-- Asia -->
+    <path d="M640 90 L900 80 L1050 120 L1100 180 L1080 260 L950 280 L780 250 L680 200 L650 140 Z"/>
+    <!-- Australia -->
+    <path d="M900 380 L1020 370 L1060 420 L1040 460 L960 470 L900 430 Z"/>
+  </g>
+
+  <!-- Connection arcs from Montgomery hub -->
+  <g fill="none" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrow)" opacity="0.85">
+    <!-- HMMA / local -->
+    <path d="M268 168 L290 175" />
+    <!-- West Point GA (KaGA) -->
+    <path d="M268 168 L310 162" />
+    <!-- Savannah HMGMA -->
+    <path d="M268 168 L340 175" />
+    <!-- Mobile Port -->
+    <path d="M268 168 L255 195" />
+    <!-- West coast corridor -->
+    <path d="M268 168 L120 155" stroke-dasharray="6 4" opacity="0.6"/>
+    <!-- Europe -->
+    <path d="M268 168 L560 140" stroke-dasharray="8 5" opacity="0.55"/>
+    <!-- Asia -->
+    <path d="M268 168 L880 150" stroke-dasharray="8 5" opacity="0.55"/>
+    <!-- South America -->
+    <path d="M268 168 L320 380" stroke-dasharray="8 5" opacity="0.5"/>
+  </g>
+
+  <!-- Hub point: Montgomery, AL -->
+  <circle cx="268" cy="168" r="36" fill="url(#hubGlow)" opacity="0.7"/>
+  <circle cx="268" cy="168" r="14" fill="#3B82D6" filter="url(#glow)"/>
+  <circle cx="268" cy="168" r="6" fill="#fff"/>
+
+  <!-- Destination points -->
+  <g fill="#93c5fd">
+    <circle cx="290" cy="175" r="4"/><text x="298" y="178" fill="#e2e8f0" font-family="system-ui,sans-serif" font-size="11" font-weight="600">HMMA</text>
+    <circle cx="340" cy="175" r="4"/><text x="348" y="178" fill="#cbd5e1" font-family="system-ui,sans-serif" font-size="10">HMGMA</text>
+    <circle cx="310" cy="162" r="3"/><text x="318" y="165" fill="#cbd5e1" font-family="system-ui,sans-serif" font-size="10">KaGA</text>
+    <circle cx="255" cy="195" r="4"/><text x="218" y="200" fill="#cbd5e1" font-family="system-ui,sans-serif" font-size="10">Mobile Port</text>
+    <circle cx="560" cy="140" r="3" opacity="0.6"/>
+    <circle cx="880" cy="150" r="3" opacity="0.6"/>
+  </g>
+
+  <!-- Hub label -->
+  <g>
+    <rect x="188" y="188" width="160" height="28" rx="2" fill="#3B82D6" opacity="0.95"/>
+    <text x="268" y="207" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="13" font-weight="700" letter-spacing="0.08em">MONTGOMERY, AL</text>
+  </g>
+
+  <text x="600" y="42" text-anchor="middle" fill="#94a3b8" font-family="system-ui,sans-serif" font-size="14" font-weight="600" letter-spacing="0.2em">GLOBAL LOGISTICS HUB</text>
+</svg>
