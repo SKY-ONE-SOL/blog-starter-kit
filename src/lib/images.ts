@@ -18,14 +18,29 @@ export const siteImages = {
   },
   business: {
     logistics: { src: "/images/logistics.jpg", alt: "Truck logistics and transportation" },
-    inspection: { src: "/images/inspection.jpg", alt: "Automotive quality inspection" },
+    inspection: {
+      src: "/images/inspection.jpg",
+      alt: "Engineer performing automotive quality inspection",
+    },
     warehouse: { src: "/images/warehouse.jpg", alt: "Warehouse storage and operations" },
-    rework: { src: "/images/automotive-parts.jpg", alt: "Automotive parts handling and rework" },
+    rework: {
+      src: "/images/automotive-parts.jpg",
+      alt: "Automotive engine rework and mechanical service",
+    },
   },
   news: [
-    { src: "/images/news-facility.jpg", alt: "Logistics hub and freight operations" },
-    { src: "/images/news-quality.jpg", alt: "Quality control in manufacturing" },
-    { src: "/images/news-expansion.jpg", alt: "Warehouse operations and expansion" },
+    {
+      src: "/images/news-facility.jpg",
+      alt: "Trucks at logistics distribution hub",
+    },
+    {
+      src: "/images/news-quality.jpg",
+      alt: "Automotive manufacturing quality control",
+    },
+    {
+      src: "/images/news-expansion.jpg",
+      alt: "Forklift operating in expanded warehouse zone",
+    },
   ],
 } as const;
 
