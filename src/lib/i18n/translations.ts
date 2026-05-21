@@ -30,7 +30,7 @@ const en = {
     scroll: "Scroll",
     tagline: "Automotive Parts Total Solution",
     description:
-      "We deliver precision warehouse control, inbound/outbound logistics, pre-shipment inspection, and third-party quality services for OEMs and tier suppliers across the U.S. automotive corridor.",
+      "We deliver precision warehouse control, inbound/outbound logistics, pre-shipment inspection, automotive parts assembly, and third-party quality services for OEMs and tier suppliers across the U.S. automotive corridor.",
     specialties: [
       "Parts Logistics",
       "Quality Inspection",
@@ -304,7 +304,7 @@ const ko: Translations = {
     scroll: "Scroll",
     tagline: "자동차 부품 토탈 솔루션",
     description:
-      "완성차·부품 OEM 및 협력사를 대상으로 창고관리, 입출고 물류, 출하검사, 3자 품질검사 및 리워크 서비스를 제공하는 자동차 산업 전문 파트너입니다.",
+      "완성차·부품 OEM 및 협력사를 대상으로 창고관리, 입출고 물류, 출하검사, 부품 조립, 3자 품질검사 및 리워크 서비스를 제공하는 자동차 산업 전문 파트너입니다.",
     specialties: ["부품 물류", "품질검사", "창고관리", "3자 QC"],
     ctaServices: "사업영역",
     ctaAbout: "시설 소개",
