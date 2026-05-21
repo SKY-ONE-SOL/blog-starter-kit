@@ -1,89 +1,96 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-label="Global logistics hub from Montgomery, Alabama">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-label="Global logistics network from Montgomery hub">
   <defs>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0c1220"/>
-      <stop offset="100%" stop-color="#1a335f"/>
+    <linearGradient id="ocean" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#0d2137"/>
     </linearGradient>
-    <radialGradient id="hubGlow" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#3B82D6" stop-opacity="0.9"/>
-      <stop offset="100%" stop-color="#3B82D6" stop-opacity="0"/>
+    <radialGradient id="hubPulse" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="1"/>
+      <stop offset="35%" stop-color="#7dd3fc" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0"/>
     </radialGradient>
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="3" result="blur"/>
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2" result="b"/>
       <feMerge>
-        <feMergeNode in="blur"/>
+        <feMergeNode in="b"/>
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
-    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
-      <path d="M0,0 L8,4 L0,8 Z" fill="#60a5fa"/>
-    </marker>
+    <filter id="lineGlow">
+      <feGaussianBlur stdDeviation="1.2" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
   </defs>
 
-  <rect width="1200" height="675" fill="url(#bg)"/>
+  <rect width="1200" height="675" fill="url(#ocean)"/>
 
-  <!-- Grid -->
-  <g stroke="#1e3a5f" stroke-width="0.5" opacity="0.4">
-    <path d="M0 112.5 H1200 M0 225 H1200 M0 337.5 H1200 M0 450 H1200 M0 562.5 H1200"/>
-    <path d="M150 0 V675 M300 0 V675 M450 0 V675 M600 0 V675 M750 0 V675 M900 0 V675 M1050 0 V675"/>
+  <!-- Subtle vignette -->
+  <rect width="1200" height="675" fill="radial-gradient(circle at 50% 45%, transparent 30%, rgba(0,0,0,0.45) 100%)"/>
+
+  <!-- Continents - light blue silhouettes -->
+  <g fill="#3d6a9c" opacity="0.55">
+    <path d="M95 95 C140 75 200 70 260 85 C310 95 350 115 385 145 C410 175 405 215 375 250 C340 285 290 305 230 298 C175 288 130 260 100 220 C75 185 70 140 95 95 Z"/>
+    <path d="M255 295 C295 288 330 300 355 335 C375 375 365 430 330 475 C295 515 250 530 215 510 C185 480 180 420 200 370 C220 330 235 305 255 295 Z"/>
+    <path d="M505 88 C555 78 595 88 615 115 C630 140 620 168 585 182 C550 192 515 185 495 165 C478 145 485 105 505 88 Z"/>
+    <path d="M515 185 C575 175 625 195 655 245 C675 300 665 365 625 410 C580 450 520 465 475 440 C440 410 430 350 450 295 C470 240 490 200 515 185 Z"/>
+    <path d="M655 82 C780 68 920 72 1040 95 C1105 115 1140 155 1135 205 C1125 265 1060 310 940 325 C820 335 710 310 640 270 C590 235 575 185 600 140 C620 105 635 90 655 82 Z"/>
+    <path d="M895 355 C980 345 1060 360 1095 400 C1115 440 1095 480 1040 500 C970 515 900 495 870 455 C850 420 860 375 895 355 Z"/>
   </g>
 
-  <!-- Simplified world continents -->
-  <g fill="#2d4a6f" opacity="0.85">
-    <!-- North America -->
-    <path d="M80 120 L220 90 L320 100 L380 130 L420 180 L400 240 L350 280 L280 300 L200 280 L120 240 L70 190 Z"/>
-    <!-- South America -->
-    <path d="M280 300 L340 310 L380 360 L370 450 L320 520 L270 500 L250 420 L260 340 Z"/>
-    <!-- Europe -->
-    <path d="M520 110 L600 95 L640 120 L630 160 L580 180 L530 170 Z"/>
-    <!-- Africa -->
-    <path d="M530 180 L620 170 L660 220 L650 340 L600 400 L540 380 L520 280 Z"/>
-    <!-- Asia -->
-    <path d="M640 90 L900 80 L1050 120 L1100 180 L1080 260 L950 280 L780 250 L680 200 L650 140 Z"/>
-    <!-- Australia -->
-    <path d="M900 380 L1020 370 L1060 420 L1040 460 L960 470 L900 430 Z"/>
+  <!-- Secondary continent highlight -->
+  <g fill="#5b8fc4" opacity="0.2">
+    <path d="M95 95 C140 75 200 70 260 85 C310 95 350 115 385 145 C410 175 405 215 375 250 C340 285 290 305 230 298 C175 288 130 260 100 220 C75 185 70 140 95 95 Z"/>
+    <path d="M655 82 C780 68 920 72 1040 95 C1105 115 1140 155 1135 205 C1125 265 1060 310 940 325 C820 335 710 310 640 270 C590 235 575 185 600 140 C620 105 635 90 655 82 Z"/>
   </g>
 
-  <!-- Connection arcs from Montgomery hub -->
-  <g fill="none" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrow)" opacity="0.85">
-    <!-- HMMA / local -->
-    <path d="M268 168 L290 175" />
-    <!-- West Point GA (KaGA) -->
-    <path d="M268 168 L310 162" />
-    <!-- Savannah HMGMA -->
-    <path d="M268 168 L340 175" />
-    <!-- Mobile Port -->
-    <path d="M268 168 L255 195" />
-    <!-- West coast corridor -->
-    <path d="M268 168 L120 155" stroke-dasharray="6 4" opacity="0.6"/>
-    <!-- Europe -->
-    <path d="M268 168 L560 140" stroke-dasharray="8 5" opacity="0.55"/>
-    <!-- Asia -->
-    <path d="M268 168 L880 150" stroke-dasharray="8 5" opacity="0.55"/>
-    <!-- South America -->
-    <path d="M268 168 L320 380" stroke-dasharray="8 5" opacity="0.5"/>
+  <!-- Network arcs from Montgomery (hub) -->
+  <g fill="none" stroke="#e2f4ff" stroke-width="1.4" filter="url(#lineGlow)" opacity="0.9">
+    <path d="M272 178 C320 120 420 95 560 130"/>
+    <path d="M272 178 C380 100 620 85 900 120"/>
+    <path d="M272 178 C340 200 520 280 620 380"/>
+    <path d="M272 178 C300 250 320 400 280 480"/>
+    <path d="M272 178 C200 160 100 140 60 175"/>
+    <path d="M272 178 C240 200 200 280 180 360"/>
+    <path d="M272 178 C300 165 340 155 380 168"/>
+    <path d="M272 178 C250 195 230 220 248 248"/>
   </g>
 
-  <!-- Hub point: Montgomery, AL -->
-  <circle cx="268" cy="168" r="36" fill="url(#hubGlow)" opacity="0.7"/>
-  <circle cx="268" cy="168" r="14" fill="#3B82D6" filter="url(#glow)"/>
-  <circle cx="268" cy="168" r="6" fill="#fff"/>
-
-  <!-- Destination points -->
-  <g fill="#93c5fd">
-    <circle cx="290" cy="175" r="4"/><text x="298" y="178" fill="#e2e8f0" font-family="system-ui,sans-serif" font-size="11" font-weight="600">HMMA</text>
-    <circle cx="340" cy="175" r="4"/><text x="348" y="178" fill="#cbd5e1" font-family="system-ui,sans-serif" font-size="10">HMGMA</text>
-    <circle cx="310" cy="162" r="3"/><text x="318" y="165" fill="#cbd5e1" font-family="system-ui,sans-serif" font-size="10">KaGA</text>
-    <circle cx="255" cy="195" r="4"/><text x="218" y="200" fill="#cbd5e1" font-family="system-ui,sans-serif" font-size="10">Mobile Port</text>
-    <circle cx="560" cy="140" r="3" opacity="0.6"/>
-    <circle cx="880" cy="150" r="3" opacity="0.6"/>
+  <g fill="none" stroke="#93c5fd" stroke-width="0.8" opacity="0.45">
+    <path d="M560 130 C680 110 820 125 980 155"/>
+    <path d="M620 380 C740 360 880 370 1000 395"/>
+    <path d="M380 168 C480 150 540 175 585 182"/>
+    <path d="M100 140 C200 100 400 80 655 82"/>
   </g>
 
-  <!-- Hub label -->
-  <g>
-    <rect x="188" y="188" width="160" height="28" rx="2" fill="#3B82D6" opacity="0.95"/>
-    <text x="268" y="207" text-anchor="middle" fill="#fff" font-family="system-ui,sans-serif" font-size="13" font-weight="700" letter-spacing="0.08em">MONTGOMERY, AL</text>
+  <!-- Regional nodes -->
+  <g fill="#ffffff" filter="url(#softGlow)">
+    <circle cx="560" cy="130" r="3" opacity="0.85"/>
+    <circle cx="900" cy="120" r="3" opacity="0.8"/>
+    <circle cx="585" cy="182" r="2.5" opacity="0.75"/>
+    <circle cx="620" cy="380" r="3" opacity="0.75"/>
+    <circle cx="980" cy="155" r="2.5" opacity="0.65"/>
+    <circle cx="1000" cy="395" r="2.5" opacity="0.6"/>
+    <circle cx="280" cy="480" r="2.5" opacity="0.6"/>
+    <circle cx="100" cy="175" r="2.5" opacity="0.7"/>
+    <circle cx="340" cy="155" r="2" opacity="0.65"/>
+    <circle cx="248" cy="248" r="2" opacity="0.65"/>
   </g>
 
-  <text x="600" y="42" text-anchor="middle" fill="#94a3b8" font-family="system-ui,sans-serif" font-size="14" font-weight="600" letter-spacing="0.2em">GLOBAL LOGISTICS HUB</text>
+  <!-- Secondary hub rings -->
+  <g fill="none" stroke="#ffffff" stroke-width="0.8" opacity="0.35">
+    <circle cx="900" cy="120" r="10"/>
+    <circle cx="900" cy="120" r="16" opacity="0.5"/>
+    <circle cx="585" cy="182" r="8"/>
+    <circle cx="620" cy="380" r="9"/>
+  </g>
+
+  <!-- Montgomery primary hub -->
+  <circle cx="272" cy="178" r="52" fill="url(#hubPulse)" opacity="0.85"/>
+  <circle cx="272" cy="178" r="18" fill="none" stroke="#ffffff" stroke-width="1.5" opacity="0.9"/>
+  <circle cx="272" cy="178" r="28" fill="none" stroke="#ffffff" stroke-width="0.8" opacity="0.45"/>
+  <circle cx="272" cy="178" r="38" fill="none" stroke="#7dd3fc" stroke-width="0.6" opacity="0.3"/>
+  <circle cx="272" cy="178" r="5" fill="#ffffff" filter="url(#softGlow)"/>
 </svg>
