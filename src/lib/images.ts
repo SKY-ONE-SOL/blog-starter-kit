@@ -10,7 +10,7 @@ export const siteImages = {
   },
   network: {
     src: "/images/network.jpg",
-    alt: "Global logistics and transportation network",
+    alt: "Digital world map with glowing global network connections",
   },
   qualityLab: {
     src: "/images/quality-lab.jpg",
