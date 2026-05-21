@@ -3,15 +3,13 @@
 import { LanguageProvider } from "@/lib/i18n/language-context";
 import { SiteHeader } from "./site-header";
 import { HeroSection } from "./hero-section";
+import { NewsSection } from "./news-section";
+import { BusinessAreaSection } from "./business-area-section";
+import { NetworkSection } from "./network-section";
 import { AboutSection } from "./about-section";
-import { LocationSection } from "./location-section";
-import { ServicesSection } from "./services-section";
-import { MottoSection } from "./motto-section";
-import { CareersSection } from "./careers-section";
-import { WarehouseSection } from "./warehouse-section";
-import { QualitySection } from "./quality-section";
-import { AdvantagesSection } from "./advantages-section";
+import { InnovationSection } from "./innovation-section";
 import { ContactSection } from "./contact-section";
+import { MarqueeBanner } from "./marquee-banner";
 import { SiteFooter } from "./site-footer";
 
 export function SiteShell() {
@@ -20,15 +18,13 @@ export function SiteShell() {
       <SiteHeader />
       <main>
         <HeroSection />
+        <NewsSection />
+        <BusinessAreaSection />
+        <NetworkSection />
         <AboutSection />
-        <LocationSection />
-        <ServicesSection />
-        <MottoSection />
-        <CareersSection />
-        <WarehouseSection />
-        <QualitySection />
-        <AdvantagesSection />
+        <InnovationSection />
         <ContactSection />
+        <MarqueeBanner />
       </main>
       <SiteFooter />
     </LanguageProvider>

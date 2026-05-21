@@ -1,15 +1,16 @@
 "use client";
 
 import { useLanguage } from "@/lib/i18n/language-context";
+import { navItems } from "@/lib/i18n/translations";
 import { CompanyLogo } from "./company-logo";
 
 export function SiteFooter() {
   const { t } = useLanguage();
 
   return (
-    <footer className="border-t border-steel-800 bg-navy-950 text-steel-300">
-      <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6 lg:px-8">
-        <div className="flex flex-col gap-10 md:flex-row md:items-start md:justify-between">
+    <footer className="bg-steel-900 text-steel-400">
+      <div className="mx-auto max-w-[1400px] px-6 py-16 lg:px-10">
+        <div className="grid gap-12 lg:grid-cols-[1.2fr_1fr_1fr]">
           <div>
             <CompanyLogo
               size={48}
@@ -17,34 +18,45 @@ export function SiteFooter() {
               subline={t.common.wordmarkSubline}
               variant="light"
             />
-            <p className="mt-4 max-w-sm text-sm text-steel-400">{t.hero.tagline}</p>
+            <p className="mt-6 max-w-sm text-sm leading-relaxed">{t.hero.intro}</p>
           </div>
 
-          <div className="grid gap-8 sm:grid-cols-2">
-            <div>
-              <h3 className="text-xs font-bold uppercase tracking-[0.2em] text-steel-200">
-                {t.footer.location}
-              </h3>
-              <p className="mt-3 text-sm">{t.about.location.address}</p>
-              <p className="mt-1 text-sm text-steel-400">{t.about.location.area}</p>
-            </div>
-            <div>
-              <h3 className="text-xs font-bold uppercase tracking-[0.2em] text-steel-200">
-                {t.footer.contact}
-              </h3>
-              <a
-                href={`mailto:${t.common.email}`}
-                className="mt-3 block font-mono text-sm text-brand-300 hover:text-brand-200"
-              >
-                {t.common.email}
-              </a>
-              <p className="mt-2 text-sm text-steel-400">{t.common.domain}</p>
-            </div>
+          <div>
+            <h3 className="text-xs font-bold uppercase tracking-[0.2em] text-white">Menu</h3>
+            <ul className="mt-4 space-y-2">
+              {navItems.map((item) => (
+                <li key={item.href}>
+                  <a
+                    href={item.href}
+                    className="text-sm transition hover:text-white"
+                  >
+                    {t.nav[item.key]}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="text-xs font-bold uppercase tracking-[0.2em] text-white">
+              {t.footer.contact}
+            </h3>
+            <a
+              href={`mailto:${t.common.email}`}
+              className="mt-4 block text-sm text-brand-300 hover:text-brand-200"
+            >
+              {t.common.email}
+            </a>
+            <p className="mt-4 text-sm">{t.about.location.address}</p>
+            <p className="mt-1 text-sm">{t.common.domain}</p>
           </div>
         </div>
 
-        <div className="mt-10 border-t border-steel-800 pt-6 text-center text-xs uppercase tracking-wider text-steel-500">
-          © {new Date().getFullYear()} {t.common.companyName}. {t.common.rights}
+        <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-steel-700 pt-8 text-xs uppercase tracking-wider sm:flex-row">
+          <p>
+            © {new Date().getFullYear()} {t.common.companyName}. {t.common.rights}
+          </p>
+          <p className="text-steel-500">Montgomery, Alabama · USA</p>
         </div>
       </div>
     </footer>

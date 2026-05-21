@@ -8,17 +8,17 @@ type LanguageToggleProps = {
   variant?: "light" | "dark";
 };
 
-export function LanguageToggle({ variant = "dark" }: LanguageToggleProps) {
+export function LanguageToggle({ variant = "light" }: LanguageToggleProps) {
   const { locale, setLocale } = useLanguage();
-  const isLight = variant === "light";
+  const isDark = variant === "dark";
 
   return (
     <div
       className={cn(
-        "flex border p-0.5",
-        isLight
-          ? "border-steel-300 bg-steel-50"
-          : "border-steel-200 bg-steel-100",
+        "flex p-0.5",
+        isDark
+          ? "border border-white/25 bg-white/5"
+          : "border border-steel-200 bg-white",
       )}
       role="group"
       aria-label="Language"
@@ -31,9 +31,11 @@ export function LanguageToggle({ variant = "dark" }: LanguageToggleProps) {
           className={cn(
             "px-3 py-1 text-xs font-bold uppercase tracking-wider transition",
             locale === lang
-              ? "bg-brand-600 text-white"
-              : isLight
-                ? "text-steel-600 hover:text-brand-700"
+              ? isDark
+                ? "bg-white text-navy-950"
+                : "bg-brand-600 text-white"
+              : isDark
+                ? "text-white/70 hover:text-white"
                 : "text-steel-600 hover:text-brand-700",
           )}
           aria-pressed={locale === lang}

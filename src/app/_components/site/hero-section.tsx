@@ -1,98 +1,76 @@
 "use client";
 
-import Image from "next/image";
 import { useLanguage } from "@/lib/i18n/language-context";
-import { LOGO_ALT, LOGO_SRC } from "@/lib/brand";
 
 export function HeroSection() {
   const { t } = useLanguage();
 
   return (
-    <section className="relative overflow-hidden bg-hero-gradient pt-[4.25rem]">
-      <div className="absolute inset-0 bg-grid-industrial bg-grid opacity-40" />
-      <div className="absolute inset-0 bg-gradient-to-r from-navy-950/90 via-navy-950/70 to-transparent" />
+    <section className="relative flex min-h-screen flex-col justify-end overflow-hidden bg-navy-950">
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_20%_50%,rgba(59,130,214,0.25),transparent_50%),radial-gradient(ellipse_at_80%_20%,rgba(37,99,184,0.2),transparent_45%)]" />
+      <div className="absolute inset-0 bg-grid-industrial bg-grid opacity-[0.15]" />
+      <div className="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/40 to-navy-950/20" />
 
-      <div className="relative mx-auto max-w-6xl px-4 pb-20 pt-16 sm:px-6 sm:pb-28 sm:pt-20 lg:px-8">
-        <div className="grid items-center gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16">
-          <div>
-            <p className="inline-flex items-center gap-2 border border-brand-500/40 bg-brand-950/40 px-4 py-2 text-xs font-bold uppercase tracking-[0.2em] text-brand-200">
-              <span className="h-1.5 w-1.5 bg-brand-400" />
-              {t.hero.badge}
-            </p>
+      <div className="relative mx-auto w-full max-w-[1400px] px-6 pb-16 pt-32 lg:px-10 lg:pb-24 lg:pt-40">
+        <p
+          className="hero-line text-sm font-medium uppercase tracking-[0.35em] text-brand-300"
+          style={{ animationDelay: "0.1s" }}
+        >
+          {t.hero.hook}
+        </p>
 
-            <h1 className="mt-8 font-display text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl lg:text-[3.25rem]">
-              {t.hero.tagline}
+        <div className="mt-6 space-y-1 md:mt-10">
+          {t.hero.lines.map((line, i) => (
+            <h1
+              key={line}
+              className="hero-line font-display text-[clamp(2.5rem,8vw,6.5rem)] font-bold leading-[0.95] tracking-tight text-white"
+              style={{ animationDelay: `${0.2 + i * 0.12}s` }}
+            >
+              {line}
             </h1>
+          ))}
+          <p
+            className="hero-line pt-2 font-display text-[clamp(1.5rem,4vw,3rem)] font-bold tracking-tight text-brand-400"
+            style={{ animationDelay: "0.65s" }}
+          >
+            {t.hero.provider}
+          </p>
+        </div>
 
-            <p className="mt-6 max-w-xl text-base leading-relaxed text-steel-300 sm:text-lg">
-              {t.hero.description}
-            </p>
+        <p
+          className="hero-line mt-10 max-w-2xl text-base leading-relaxed text-steel-300 md:text-lg"
+          style={{ animationDelay: "0.85s" }}
+        >
+          {t.hero.intro}
+        </p>
 
-            <div className="mt-8 flex flex-wrap gap-2">
-              {t.hero.specialties.map((item) => (
-                <span
-                  key={item}
-                  className="border border-steel-600/60 bg-navy-900/50 px-3 py-1.5 text-xs font-semibold uppercase tracking-wider text-steel-200"
-                >
-                  {item}
-                </span>
-              ))}
-            </div>
-
-            <div className="mt-10 flex flex-wrap gap-3">
-              <a href="#services" className="btn-primary">
-                {t.hero.ctaServices}
-              </a>
-              <a
-                href="#about"
-                className="inline-flex items-center justify-center border border-steel-500 bg-transparent px-6 py-3 text-sm font-semibold uppercase tracking-wide text-steel-200 transition hover:border-brand-400 hover:text-white"
-              >
-                {t.hero.ctaAbout}
-              </a>
-            </div>
-          </div>
-
-          <div className="flex flex-col items-center lg:items-end">
-            <div className="relative w-full max-w-sm overflow-hidden border border-steel-700/80 bg-black">
-              <div className="absolute left-0 top-0 z-10 h-1 w-full bg-brand-500" />
-              <div className="flex flex-col items-center px-8 py-10 text-center">
-                <Image
-                  src={LOGO_SRC}
-                  alt={LOGO_ALT}
-                  width={200}
-                  height={200}
-                  priority
-                  className="h-auto w-full max-w-[200px]"
-                />
-                <p className="mt-6 font-display text-xl font-bold text-white">
-                  {t.common.companyName}
-                </p>
-                <p className="mt-2 text-xs font-semibold uppercase tracking-[0.2em] text-brand-300">
-                  {t.common.wordmarkSubline}
-                </p>
-              </div>
-            </div>
-
-            <div className="mt-6 grid w-full max-w-sm grid-cols-3 gap-px border border-steel-700/80 bg-steel-700/80">
-              {t.hero.stats.map((stat) => (
-                <div key={stat.label} className="bg-navy-900/80 px-3 py-4 text-center">
-                  <p className="metric-value text-2xl text-white sm:text-3xl">
-                    {stat.value}
-                    {stat.unit && (
-                      <span className="ml-0.5 text-sm font-medium text-brand-300">
-                        {stat.unit}
-                      </span>
-                    )}
-                  </p>
-                  <p className="mt-1 text-[10px] font-semibold uppercase tracking-wider text-steel-400">
-                    {stat.label}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </div>
+        <div
+          className="hero-line mt-12 flex flex-wrap gap-4"
+          style={{ animationDelay: "1s" }}
+        >
+          <a
+            href="#business"
+            className="bg-brand-600 px-8 py-3.5 text-sm font-semibold uppercase tracking-widest text-white transition hover:bg-brand-500"
+          >
+            {t.hero.ctaServices}
+          </a>
+          <a
+            href="#about"
+            className="border border-white/30 px-8 py-3.5 text-sm font-semibold uppercase tracking-widest text-white transition hover:bg-white/10"
+          >
+            {t.hero.ctaAbout}
+          </a>
         </div>
       </div>
+
+      <a
+        href="#news"
+        className="absolute bottom-8 left-1/2 flex -translate-x-1/2 flex-col items-center gap-2 text-white/50 transition hover:text-white"
+        aria-label={t.hero.scroll}
+      >
+        <span className="text-[10px] uppercase tracking-[0.3em]">{t.hero.scroll}</span>
+        <span className="block h-10 w-px animate-pulse bg-white/40" />
+      </a>
     </section>
   );
 }

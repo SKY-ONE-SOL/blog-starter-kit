@@ -1,56 +1,53 @@
 "use client";
 
 import { useLanguage } from "@/lib/i18n/language-context";
-import { SectionHeading } from "./section-heading";
 
 export function AboutSection() {
   const { t } = useLanguage();
   const loc = t.about.location;
 
   return (
-    <section id="about" className="scroll-mt-[4.25rem] border-b border-steel-200 bg-white py-20 sm:py-28">
-      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-        <SectionHeading
-          label={t.about.label}
-          title={t.about.title}
-          subtitle={t.about.subtitle}
-        />
+    <section id="about" className="scroll-mt-20 bg-steel-100 py-16 md:py-28">
+      <div className="mx-auto max-w-[1400px] px-6 lg:px-10">
+        <div className="grid gap-12 lg:grid-cols-2 lg:gap-20">
+          <div>
+            <p className="glovis-section-label">{t.about.label}</p>
+            <h2 className="glovis-section-title mt-4">{t.about.title}</h2>
+            <p className="mt-6 text-lg leading-relaxed text-steel-600">{t.about.subtitle}</p>
 
-        <div className="mt-14 grid gap-6 lg:grid-cols-2">
-          <div className="section-panel-accent p-8">
-            <h3 className="border-b border-steel-200 pb-3 font-display text-lg font-semibold text-navy-950">
-              {t.about.facilityTitle}
-            </h3>
-            <dl className="mt-6 divide-y divide-steel-100">
-              <div className="grid grid-cols-2 gap-4 py-4">
+            <dl className="mt-10 space-y-6 border-t border-steel-300 pt-10">
+              <div>
                 <dt className="text-xs font-bold uppercase tracking-wider text-steel-500">
                   {t.about.fields.location}
                 </dt>
-                <dd className="text-right text-sm font-semibold text-steel-900">{loc.address}</dd>
+                <dd className="mt-1 text-lg font-semibold text-steel-900">{loc.address}</dd>
               </div>
-              <div className="grid grid-cols-2 gap-4 py-4">
+              <div>
                 <dt className="text-xs font-bold uppercase tracking-wider text-steel-500">
                   {t.about.fields.area}
                 </dt>
-                <dd className="text-right text-sm font-semibold text-steel-900">{loc.area}</dd>
+                <dd className="mt-1 text-lg font-semibold text-steel-900">{loc.area}</dd>
               </div>
-              <div className="grid grid-cols-2 gap-4 py-4">
+              <div>
                 <dt className="text-xs font-bold uppercase tracking-wider text-steel-500">
                   {t.about.fields.warehouse}
                 </dt>
-                <dd className="text-right text-sm font-semibold text-steel-900">{loc.warehouse}</dd>
+                <dd className="mt-1 text-lg font-semibold text-steel-900">{loc.warehouse}</dd>
               </div>
             </dl>
           </div>
 
-          <div className="space-y-3">
+          <div className="grid gap-3 sm:grid-cols-3 lg:grid-cols-1">
             {loc.zones.map((zone) => (
-              <div key={zone.id} className="section-panel flex gap-4 p-5">
-                <div className="flex h-11 w-11 shrink-0 items-center justify-center bg-brand-600 font-mono text-sm font-bold text-white">
+              <div
+                key={zone.id}
+                className="flex items-start gap-4 border border-steel-200 bg-white p-6"
+              >
+                <span className="flex h-12 w-12 shrink-0 items-center justify-center bg-brand-600 font-display text-lg font-bold text-white">
                   {zone.id}
-                </div>
+                </span>
                 <div>
-                  <h4 className="font-semibold text-navy-950">{zone.label}</h4>
+                  <h4 className="font-bold text-steel-900">{zone.label}</h4>
                   <p className="mt-1 text-sm text-steel-600">{zone.description}</p>
                 </div>
               </div>

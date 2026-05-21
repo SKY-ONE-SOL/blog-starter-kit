@@ -8,32 +8,69 @@
   }
 
   body {
-    @apply bg-steel-50 text-steel-800 antialiased;
+    @apply bg-white text-steel-800 antialiased;
   }
 }
 
 @layer components {
-  .section-panel {
-    @apply border border-steel-200 bg-white shadow-card;
+  .glovis-section-label {
+    @apply text-xs font-bold uppercase tracking-[0.28em] text-steel-500;
   }
 
-  .section-panel-accent {
-    @apply border border-steel-200 bg-white shadow-industrial;
+  .glovis-section-title {
+    @apply font-display text-3xl font-bold tracking-tight text-steel-900 md:text-4xl lg:text-5xl;
   }
 
-  .btn-primary {
-    @apply inline-flex items-center justify-center bg-brand-600 px-6 py-3 text-sm font-semibold uppercase tracking-wide text-white transition hover:bg-brand-700;
+  .btn-glovis {
+    @apply inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-widest text-steel-900 transition hover:text-brand-600;
   }
 
-  .btn-outline {
-    @apply inline-flex items-center justify-center border border-steel-300 bg-white px-6 py-3 text-sm font-semibold uppercase tracking-wide text-steel-700 transition hover:border-brand-500 hover:text-brand-700;
+  .business-card {
+    @apply relative flex min-h-[22rem] flex-col justify-end overflow-hidden p-8 md:min-h-[28rem] md:p-10;
   }
 
-  .metric-value {
-    @apply font-mono text-3xl font-bold tracking-tight text-navy-950;
+  .business-card-bg {
+    @apply absolute inset-0 bg-gradient-to-br from-navy-900 via-brand-900 to-brand-700 transition duration-500 group-hover:scale-105;
+  }
+}
+
+@layer utilities {
+  .animate-marquee {
+    animation: marquee 28s linear infinite;
   }
 
-  .industry-tag {
-    @apply border border-steel-200 bg-steel-50 px-3 py-1.5 text-xs font-semibold uppercase tracking-wider text-steel-600;
+  .animate-marquee2 {
+    animation: marquee2 28s linear infinite;
+  }
+
+  .hero-line {
+    animation: heroFadeUp 0.9s ease forwards;
+    opacity: 0;
+    transform: translateY(24px);
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes marquee2 {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes heroFadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
