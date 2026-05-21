@@ -22,12 +22,12 @@ npm start
 
 ## Site Sections
 
-- Company profile & facility zones
-- Customer proximity (HMMA, KaGA, HMGMA, Mobile Port)
-- Services, motto, capabilities
-- Warehouse control flow
-- Quality control & assurance
-- Advantages & contact
+- Hero (AUTOMOTIVE PARTS TOTAL SOLUTION)
+- SKY ONE NOW — 4 news cards
+- Business Area — Logistics, QC/Inspection/Rework, Warehouse, Assembly
+- Global Network & customer proximity table
+- Innovation, About, Contact
+- Korean / English language toggle
 
 Content sourced from the SKY ONE company profile document.
 

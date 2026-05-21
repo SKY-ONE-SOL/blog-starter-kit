@@ -20,12 +20,12 @@ const plexMono = IBM_Plex_Mono({
 export const metadata: Metadata = {
   title: "SKY ONE SOLUTION | Automotive Parts Total Solution",
   description:
-    "SKY ONE SOLUTION — automotive parts logistics, warehouse control, quality inspection, and 3rd party rework services in Montgomery, Alabama.",
+    "SKY ONE SOLUTION — automotive parts total solution: logistics, warehouse, QC & inspection, rework, and assembly for OEMs and tier suppliers in Montgomery, Alabama.",
   metadataBase: new URL("https://sky1usa.com"),
   openGraph: {
-    title: "SKY ONE SOLUTION",
+    title: "SKY ONE SOLUTION | Automotive Parts Total Solution",
     description:
-      "Automotive parts logistics & quality inspection. Warehouse, QC, and 3rd party services in Montgomery, Alabama.",
+      "Automotive parts total solution — logistics, warehouse, inspection, rework, and assembly in Montgomery, Alabama.",
     url: "https://sky1usa.com",
     siteName: "SKY ONE SOLUTION",
     locale: "en_US",
