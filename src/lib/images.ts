@@ -31,7 +31,7 @@ export const siteImages = {
   news: [
     {
       src: "/images/news-facility.jpg",
-      alt: "Modern logistics warehouse exterior facility",
+      alt: "Industrial warehouse exterior with loading docks and trucks",
     },
     {
       src: "/images/news-quality.jpg",
