@@ -48,18 +48,10 @@ const en = {
   news: {
     label: "SKY ONE NOW",
     items: [
-      {
-        title: "Strategic logistics hub in Montgomery, Alabama",
-        date: "2025",
-      },
-      {
-        title: "Integrated QC & inspection for automotive tier suppliers",
-        date: "2025",
-      },
-      {
-        title: "Expanding warehouse zones for OEM partner growth",
-        date: "2025",
-      },
+      { title: "Strategic logistics hub in Montgomery, Alabama" },
+      { title: "Integrated QC & inspection for automotive tier suppliers" },
+      { title: "Expanding warehouse zones for OEM partner growth" },
+      { title: "Precision automotive parts assembly for OEM production programs" },
     ],
   },
   businessArea: {
@@ -325,9 +317,10 @@ const ko: Translations = {
   news: {
     label: "SKY ONE NOW",
     items: [
-      { title: "앨라바마 몽고메리 전략 물류 거점 운영", date: "2025" },
-      { title: "자동차 부품 협력사 대상 통합 QC·검사 서비스", date: "2025" },
-      { title: "OEM 파트너 성장을 위한 창고 Zone 확장", date: "2025" },
+      { title: "앨라바마 몽고메리 전략 물류 거점 운영" },
+      { title: "자동차 부품 협력사 대상 통합 QC·검사 서비스" },
+      { title: "OEM 파트너 성장을 위한 창고 Zone 확장" },
+      { title: "OEM 생산 프로그램을 위한 정밀 자동차 부품 조립" },
     ],
   },
   businessArea: {

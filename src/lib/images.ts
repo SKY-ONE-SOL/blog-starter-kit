@@ -45,6 +45,10 @@ export const siteImages = {
       src: "/images/news-expansion.jpg",
       alt: "Forklift operating in expanded warehouse zone",
     },
+    {
+      src: "/images/news-assembly.jpg",
+      alt: "Automotive parts assembly on a production line",
+    },
   ],
 } as const;
 
