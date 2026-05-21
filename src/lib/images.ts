@@ -31,7 +31,7 @@ export const siteImages = {
   news: [
     {
       src: "/images/news-facility.jpg",
-      alt: "Digital world map with glowing cyan network connections and Montgomery, Alabama hub",
+      alt: "Digital world map with glowing global network connections",
     },
     {
       src: "/images/news-quality.jpg",
