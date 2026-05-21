@@ -1,4 +1,8 @@
 /** Site imagery. Replace files in `public/images/` with company photos when available. */
+const globalNetworkMap = "/images/network.jpg" as const;
+const globalNetworkMapAlt =
+  "Digital world map with glowing global network connections" as const;
+
 export const siteImages = {
   hero: {
     src: "/images/hero.jpg",
@@ -9,8 +13,8 @@ export const siteImages = {
     alt: "Warehouse and distribution facility",
   },
   network: {
-    src: "/images/network.jpg",
-    alt: "Digital world map with glowing global network connections",
+    src: globalNetworkMap,
+    alt: globalNetworkMapAlt,
   },
   qualityLab: {
     src: "/images/quality-lab.jpg",
@@ -30,8 +34,8 @@ export const siteImages = {
   },
   news: [
     {
-      src: "/images/news-facility.jpg",
-      alt: "Digital world map with glowing global network connections",
+      src: globalNetworkMap,
+      alt: globalNetworkMapAlt,
     },
     {
       src: "/images/news-quality.jpg",
