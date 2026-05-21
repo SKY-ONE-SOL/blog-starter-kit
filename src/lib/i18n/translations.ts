@@ -7,7 +7,7 @@ const en = {
     htmlLang: "en",
   },
   common: {
-    companyName: "SKY ONE Solution",
+    companyName: "SKY ONE SOLUTION",
     wordmarkSubline: "Logistics · QC · Inspection",
     domain: "sky1usa.com",
     email: "info@sky1usa.com",
@@ -26,7 +26,7 @@ const en = {
     lines: ["AUTOMOTIVE", "PARTS", "LOGISTICS", "SOLUTION"],
     provider: "PROVIDER",
     intro:
-      "The future SKY ONE Solution leads is a world that grows more connected — and your value grows with it.",
+      "The future SKY ONE SOLUTION leads is a world that grows more connected — and your value grows with it.",
     scroll: "Scroll",
     tagline: "Automotive Parts Logistics & Quality Inspection",
     description:
@@ -274,7 +274,7 @@ const en = {
     label: "Contact",
     title: "Thank You",
     subtitle:
-      "We look forward to partnering with you. Reach out to discuss how SKY ONE Solution can support your operations.",
+      "We look forward to partnering with you. Reach out to discuss how SKY ONE SOLUTION can support your operations.",
   },
   footer: {
     location: "Location",
@@ -289,7 +289,7 @@ const ko: Translations = {
     htmlLang: "ko",
   },
   common: {
-    companyName: "SKY ONE Solution",
+    companyName: "SKY ONE SOLUTION",
     wordmarkSubline: "물류 · 품질검사 · 검사대행",
     domain: "sky1usa.com",
     email: "info@sky1usa.com",
@@ -524,7 +524,7 @@ const ko: Translations = {
   contact: {
     label: "문의",
     title: "감사합니다",
-    subtitle: "함께 성장할 파트너가 되겠습니다. SKY ONE Solution에 문의해 주세요.",
+    subtitle: "함께 성장할 파트너가 되겠습니다. SKY ONE SOLUTION에 문의해 주세요.",
   },
   footer: {
     location: "위치",

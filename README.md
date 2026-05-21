@@ -1,6 +1,6 @@
-# SKY ONE Solution — sky1usa.com
+# SKY ONE SOLUTION — sky1usa.com
 
-Corporate homepage for **SKY ONE Solution**, an automotive industry total solution provider based in Montgomery, Alabama.
+Corporate homepage for **SKY ONE SOLUTION**, an automotive industry total solution provider based in Montgomery, Alabama.
 
 Built with [Next.js](https://nextjs.org/), React, and Tailwind CSS.
 

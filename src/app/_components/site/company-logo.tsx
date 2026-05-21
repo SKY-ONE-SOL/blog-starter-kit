@@ -16,7 +16,7 @@ type CompanyLogoProps = {
 export function CompanyLogo({
   size = 44,
   showWordmark = true,
-  wordmark = "SKY ONE Solution",
+  wordmark = "SKY ONE SOLUTION",
   subline = "Logistics · QC · Inspection",
   className,
   variant = "dark",
