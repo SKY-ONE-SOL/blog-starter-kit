@@ -18,7 +18,7 @@ const plexMono = IBM_Plex_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "SKY ONE SOLUTION | Automotive Parts Logistics & Quality Inspection",
+  title: "SKY ONE SOLUTION | Automotive Parts Total Solution",
   description:
     "SKY ONE SOLUTION — automotive parts logistics, warehouse control, quality inspection, and 3rd party rework services in Montgomery, Alabama.",
   metadataBase: new URL("https://sky1usa.com"),

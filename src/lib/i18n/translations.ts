@@ -28,7 +28,7 @@ const en = {
     intro:
       "The future SKY ONE SOLUTION leads is a world that grows more connected — and your value grows with it.",
     scroll: "Scroll",
-    tagline: "Automotive Parts Logistics & Quality Inspection",
+    tagline: "Automotive Parts Total Solution",
     description:
       "We deliver precision warehouse control, inbound/outbound logistics, pre-shipment inspection, and third-party quality services for OEMs and tier suppliers across the U.S. automotive corridor.",
     specialties: [
@@ -302,7 +302,7 @@ const ko: Translations = {
     intro:
       "스카이 원 솔루션이 이끄는 미래의 세계는 더욱 연결되고, 고객의 가치는 더욱 커질 것입니다.",
     scroll: "Scroll",
-    tagline: "자동차 부품 물류 및 품질검사 전문",
+    tagline: "자동차 부품 토탈 솔루션",
     description:
       "완성차·부품 OEM 및 협력사를 대상으로 창고관리, 입출고 물류, 출하검사, 3자 품질검사 및 리워크 서비스를 제공하는 자동차 산업 전문 파트너입니다.",
     specialties: ["부품 물류", "품질검사", "창고관리", "3자 QC"],
