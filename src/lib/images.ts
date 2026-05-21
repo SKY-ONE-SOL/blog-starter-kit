@@ -39,7 +39,7 @@ export const siteImages = {
     },
     {
       src: "/images/news-quality.jpg",
-      alt: "Automotive manufacturing quality control",
+      alt: "Engineer inspecting automotive parts for quality control",
     },
     {
       src: "/images/news-expansion.jpg",
