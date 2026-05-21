@@ -23,7 +23,7 @@ const en = {
   },
   hero: {
     hook: "From expectation to execution",
-    lines: ["AUTOMOTIVE", "PARTS", "LOGISTICS", "SOLUTION"],
+    lines: ["AUTOMOTIVE", "PARTS", "TOTAL", "SOLUTION"],
     provider: "PROVIDER",
     intro:
       "The future SKY ONE SOLUTION leads is a world that grows more connected — and your value grows with it.",
@@ -305,7 +305,7 @@ const ko: Translations = {
   },
   hero: {
     hook: "기대를 결과로",
-    lines: ["AUTOMOTIVE", "PARTS", "LOGISTICS", "SOLUTION"],
+    lines: ["AUTOMOTIVE", "PARTS", "TOTAL", "SOLUTION"],
     provider: "PROVIDER",
     intro:
       "스카이 원 솔루션이 이끄는 미래의 세계는 더욱 연결되고, 고객의 가치는 더욱 커질 것입니다.",
