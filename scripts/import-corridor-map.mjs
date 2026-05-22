@@ -6,7 +6,8 @@
  *   node scripts/import-corridor-map.mjs <chatgpt-public-content-url>
  *
  * Private ChatGPT links (estuary/content?...sig=...) require login in a browser.
- * Save the image locally, then run with the file path.
+ * Example: file_00000000dac071f68ba017c6599b387f — save from ChatGPT, then:
+ *   npm run images:corridor-map -- public/images/automotive-corridor-map-source.png
  */
 import { execFileSync } from "node:child_process";
 import { existsSync, readFileSync } from "node:fs";
