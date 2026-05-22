@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useLanguage } from "@/lib/i18n/language-context";
 import { siteImages } from "@/lib/images";
 import { SectionImage } from "./section-image";
@@ -33,23 +34,20 @@ export function NetworkSection() {
       <div className="mx-auto max-w-[1400px] px-6 lg:px-10">
         <p className="max-w-2xl text-lg text-steel-600">{t.networkSection.subtitle}</p>
 
-        <div className="mt-16 grid grid-cols-2 gap-8 border-y border-steel-200 py-12 lg:grid-cols-4">
-          {t.networkSection.stats.map((stat) => (
-            <div key={stat.label} className="text-center lg:text-left">
-              <p className="font-display text-4xl font-bold tracking-tight text-brand-600 md:text-5xl lg:text-6xl">
-                {stat.value}
-                {stat.suffix && (
-                  <span className="ml-1 text-lg font-medium text-steel-500 md:text-xl">
-                    {stat.suffix}
-                  </span>
-                )}
-              </p>
-              <p className="mt-2 text-sm font-semibold uppercase tracking-wider text-steel-500">
-                {stat.label}
-              </p>
-            </div>
-          ))}
-        </div>
+        <figure className="mt-16 overflow-hidden border border-steel-200 bg-navy-950 shadow-md">
+          <div className="relative aspect-[1400/780] w-full">
+            <Image
+              src={siteImages.corridorMap.src}
+              alt={t.networkSection.corridorMap.alt}
+              fill
+              sizes="(max-width: 1400px) 100vw, 1400px"
+              className="object-contain object-center"
+            />
+          </div>
+          <figcaption className="border-t border-steel-700/50 bg-navy-950 px-4 py-3 text-center text-xs text-steel-400">
+            {t.networkSection.corridorMap.note}
+          </figcaption>
+        </figure>
 
         <div className="mt-16">
           <h3 className="text-lg font-bold text-steel-900">{t.location.title}</h3>

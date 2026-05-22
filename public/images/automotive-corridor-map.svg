@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 780" role="img" aria-label="Southeast U.S. Automotive Corridor map from Montgomery hub">
+  <defs>
+    <linearGradient id="ocean" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1a3a52"/>
+      <stop offset="100%" stop-color="#0d2233"/>
+    </linearGradient>
+    <linearGradient id="land" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2d5a3d"/>
+      <stop offset="100%" stop-color="#1e4029"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="1400" height="780" fill="url(#ocean)"/>
+  <rect x="0" y="0" width="980" height="780" fill="#143d52" opacity="0.35"/>
+
+  <!-- Simplified SE states -->
+  <path fill="url(#land)" opacity="0.85" d="M120 120 L420 80 L520 100 L560 200 L540 380 L480 520 L320 580 L180 520 L100 360 Z"/>
+  <path fill="#25603f" opacity="0.7" d="M520 100 L920 120 L980 280 L920 480 L720 520 L560 420 L560 200 Z"/>
+  <path fill="#2a6845" opacity="0.65" d="M560 80 L980 60 L1050 200 L1000 360 L820 400 L620 320 L560 200 Z"/>
+
+  <!-- Gulf label -->
+  <text x="200" y="620" fill="#8ecae6" font-size="14" font-family="Arial,sans-serif">Gulf of Mexico</text>
+  <text x="120" y="680" fill="#f4d35e" font-size="13" font-family="Arial,sans-serif">MEXICO BORDER — 550 miles</text>
+
+  <!-- Hub Montgomery -->
+  <g filter="url(#glow)">
+    <circle cx="430" cy="400" r="14" fill="#3b82f6" stroke="#fff" stroke-width="3"/>
+    <text x="450" y="395" fill="#fff" font-size="13" font-weight="bold" font-family="Arial,sans-serif">SKY ONE SOLUTION</text>
+    <text x="450" y="412" fill="#93c5fd" font-size="11" font-family="Arial,sans-serif">Montgomery, AL</text>
+  </g>
+
+  <!-- Connection lines + nodes (approx. positions) -->
+  <g stroke="#f4d35e" stroke-width="2" fill="none" opacity="0.9">
+    <line x1="430" y1="400" x2="445" y2="385"/><text x="455" y="378" fill="#fde047" font-size="11" font-family="Arial">5 mi</text>
+    <line x1="430" y1="400" x2="380" y2="340"/><text x="350" y="332" fill="#fde047" font-size="11">100 mi</text>
+    <line x1="430" y1="400" x2="500" y2="310"/><text x="510" y="302" fill="#fde047" font-size="11">127 mi</text>
+    <line x1="430" y1="400" x2="520" y2="250"/><text x="530" y="242" fill="#fde047" font-size="11">191 mi</text>
+    <line x1="430" y1="400" x2="600" y2="360"/><text x="610" y="352" fill="#fde047" font-size="11">88 mi</text>
+    <line x1="430" y1="400" x2="750" y2="450"/><text x="760" y="442" fill="#fde047" font-size="11">313 mi</text>
+    <line x1="430" y1="400" x2="540" y2="200"/><text x="550" y="192" fill="#fde047" font-size="11">234 mi</text>
+    <line x1="430" y1="400" x2="560" y2="170"/><text x="570" y="162" fill="#fde047" font-size="11">287 mi</text>
+    <line x1="430" y1="400" x2="530" y2="185"/><text x="500" y="175" fill="#fde047" font-size="11">298 mi</text>
+  </g>
+  <g fill="#fff">
+    <circle cx="445" cy="385" r="5"/><circle cx="380" cy="340" r="4"/><circle cx="500" cy="310" r="4"/>
+    <circle cx="520" cy="250" r="4"/><circle cx="600" cy="360" r="4"/><circle cx="750" cy="450" r="4"/>
+    <circle cx="540" cy="200" r="4"/><circle cx="560" cy="170" r="4"/><circle cx="530" cy="185" r="4"/>
+  </g>
+
+  <!-- Title -->
+  <text x="40" y="48" fill="#fff" font-size="22" font-weight="bold" font-family="Arial,sans-serif">Southeast U.S. Automotive Corridor</text>
+
+  <!-- US inset -->
+  <rect x="40" y="70" width="120" height="72" fill="#0a1628" stroke="#3b82f6" stroke-width="1" rx="4"/>
+  <path fill="#1e3a5f" d="M50 95 L140 90 L150 120 L130 135 L70 130 Z"/>
+  <rect x="95" y="100" width="28" height="22" fill="#3b82f6" opacity="0.8" rx="2"/>
+
+  <!-- Legend panel -->
+  <rect x="990" y="24" width="390" height="732" fill="#0c2340" rx="6"/>
+  <text x="1010" y="58" fill="#93c5fd" font-size="14" font-weight="bold" font-family="Arial">OEM Assembly Plants</text>
+  <text x="1010" y="78" fill="#64748b" font-size="11" font-family="Arial">from Montgomery hub</text>
+
+  <g font-family="Arial,sans-serif" font-size="12">
+    <text x="1025" y="110" fill="#fff" font-weight="bold">1.</text><text x="1045" y="110" fill="#e2e8f0">Hyundai (HMMA) — Montgomery, AL</text><text x="1320" y="110" fill="#fbbf24" text-anchor="end">5 mi</text>
+    <text x="1025" y="145" fill="#fff" font-weight="bold">2.</text><text x="1045" y="145" fill="#e2e8f0">Kia (KaGA) — West Point, GA</text><text x="1320" y="145" fill="#fbbf24" text-anchor="end">88 mi</text>
+    <text x="1025" y="180" fill="#fff" font-weight="bold">3.</text><text x="1045" y="180" fill="#e2e8f0">Hyundai Metaplant (HMGMA) — Savannah, GA</text><text x="1320" y="180" fill="#fbbf24" text-anchor="end">313 mi</text>
+    <text x="1025" y="215" fill="#fff" font-weight="bold">4.</text><text x="1045" y="215" fill="#e2e8f0">Mercedes-Benz — Vance, AL</text><text x="1320" y="215" fill="#fbbf24" text-anchor="end">100 mi</text>
+    <text x="1025" y="250" fill="#fff" font-weight="bold">5.</text><text x="1045" y="250" fill="#e2e8f0">Honda — Lincoln, AL</text><text x="1320" y="250" fill="#fbbf24" text-anchor="end">127 mi</text>
+    <text x="1025" y="285" fill="#fff" font-weight="bold">6.</text><text x="1045" y="285" fill="#e2e8f0">Mazda Toyota Mfg. — Huntsville, AL</text><text x="1320" y="285" fill="#fbbf24" text-anchor="end">191 mi</text>
+    <text x="1025" y="320" fill="#fff" font-weight="bold">7.</text><text x="1045" y="320" fill="#e2e8f0">Nissan — Smyrna, TN</text><text x="1320" y="320" fill="#fbbf24" text-anchor="end">287 mi</text>
+    <text x="1025" y="355" fill="#fff" font-weight="bold">8.</text><text x="1045" y="355" fill="#e2e8f0">General Motors — Spring Hill, TN</text><text x="1320" y="355" fill="#fbbf24" text-anchor="end">298 mi</text>
+    <text x="1025" y="390" fill="#fff" font-weight="bold">9.</text><text x="1045" y="390" fill="#e2e8f0">Volkswagen — Chattanooga, TN</text><text x="1320" y="390" fill="#fbbf24" text-anchor="end">234 mi</text>
+  </g>
+  <text x="1010" y="720" fill="#94a3b8" font-size="11" font-family="Arial">* Straight-line distance (approx.)</text>
+  <text x="1010" y="740" fill="#64748b" font-size="10" font-family="Arial">SKY ONE SOLUTION — Montgomery, Alabama</text>
+</svg>

@@ -91,12 +91,10 @@ const en = {
     label: "Global Network",
     title: "For More Meaningful Connections",
     subtitle: "Strategically positioned in the U.S. automotive manufacturing corridor.",
-    stats: [
-      { value: "15", suffix: "Acres", label: "Facility site" },
-      { value: "34,588", suffix: "sq.ft", label: "Warehouse" },
-      { value: "5", suffix: "miles", label: "To HMMA" },
-      { value: "24/7", suffix: "", label: "Operations" },
-    ],
+    corridorMap: {
+      alt: "Southeast U.S. Automotive Corridor — SKY ONE SOLUTION Montgomery hub and OEM assembly plants",
+      note: "* Straight-line distance (approx.)",
+    },
   },
   innovationSection: {
     label: "Innovation",
@@ -371,12 +369,10 @@ const ko: Translations = {
     label: "Global Network",
     title: "더 의미 있는 연결을 위해",
     subtitle: "미국 자동차 제조 벨트 중심의 전략적 입지",
-    stats: [
-      { value: "15", suffix: "Acres", label: "시설 부지" },
-      { value: "34,588", suffix: "sq.ft", label: "창고" },
-      { value: "5", suffix: "miles", label: "HMMA 거리" },
-      { value: "24/7", suffix: "", label: "운영" },
-    ],
+    corridorMap: {
+      alt: "미국 남동부 자동차 제조 벨트 — SKY ONE SOLUTION 몽고메리 허브와 완성차 공장",
+      note: "* 직선 거리 (Approx.)",
+    },
   },
   innovationSection: {
     label: "Innovation",
