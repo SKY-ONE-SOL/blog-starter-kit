@@ -144,8 +144,20 @@ const en = {
     rows: [
       { customer: "HMMA", location: "Montgomery, Alabama", distance: "5 miles", time: "7 mins", remark: "—" },
       { customer: "KaGA", location: "West Point, Georgia", distance: "88 miles", time: "1 hr 30 mins", remark: "Time zone (CT/ET)" },
-      { customer: "HMGMA", location: "Savannah, Georgia", distance: "313 miles", time: "5 hr 5 mins", remark: "—" },
+      { customer: "Mercedes-Benz", location: "Vance, Alabama", distance: "100 miles", time: "1 hr 45 mins", remark: "—" },
+      { customer: "Honda", location: "Lincoln, Alabama", distance: "127 miles", time: "2 hrs", remark: "—" },
       { customer: "Mobile Port", location: "Mobile, Alabama", distance: "166 miles", time: "2 hr 18 mins", remark: "—" },
+      {
+        customer: "Mazda Toyota Manufacturing",
+        location: "Huntsville, Alabama",
+        distance: "191 miles",
+        time: "2 hr 49 mins",
+        remark: "—",
+      },
+      { customer: "Volkswagen", location: "Chattanooga, Tennessee", distance: "234 miles", time: "3 hr 24 mins", remark: "Time zone (CT/ET)" },
+      { customer: "Nissan", location: "Smyrna, Tennessee", distance: "287 miles", time: "4 hr 27 mins", remark: "Time zone (CT/ET)" },
+      { customer: "General Motors", location: "Spring Hill, Tennessee", distance: "298 miles", time: "5 hr 10 mins", remark: "Time zone (CT/ET)" },
+      { customer: "HMGMA", location: "Savannah, Georgia", distance: "313 miles", time: "5 hr 5 mins", remark: "—" },
     ],
   },
   services: {
@@ -413,8 +425,20 @@ const ko: Translations = {
     rows: [
       { customer: "HMMA", location: "Montgomery, Alabama", distance: "5 miles", time: "7분", remark: "—" },
       { customer: "KaGA", location: "West Point, Georgia", distance: "88 miles", time: "1시간 30분", remark: "시간대 (CT/ET)" },
-      { customer: "HMGMA", location: "Savannah, Georgia", distance: "313 miles", time: "5시간 5분", remark: "—" },
+      { customer: "Mercedes-Benz", location: "Vance, Alabama", distance: "100 miles", time: "1시간 45분", remark: "—" },
+      { customer: "Honda", location: "Lincoln, Alabama", distance: "127 miles", time: "2시간", remark: "—" },
       { customer: "Mobile Port", location: "Mobile, Alabama", distance: "166 miles", time: "2시간 18분", remark: "—" },
+      {
+        customer: "Mazda Toyota Manufacturing",
+        location: "Huntsville, Alabama",
+        distance: "191 miles",
+        time: "2시간 49분",
+        remark: "—",
+      },
+      { customer: "Volkswagen", location: "Chattanooga, Tennessee", distance: "234 miles", time: "3시간 24분", remark: "시간대 (CT/ET)" },
+      { customer: "Nissan", location: "Smyrna, Tennessee", distance: "287 miles", time: "4시간 27분", remark: "시간대 (CT/ET)" },
+      { customer: "General Motors", location: "Spring Hill, Tennessee", distance: "298 miles", time: "5시간 10분", remark: "시간대 (CT/ET)" },
+      { customer: "HMGMA", location: "Savannah, Georgia", distance: "313 miles", time: "5시간 5분", remark: "—" },
     ],
   },
   services: {
