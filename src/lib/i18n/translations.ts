@@ -48,7 +48,7 @@ const en = {
   news: {
     label: "SKY ONE NOW",
     items: [
-      { title: "Strategic logistics hub in Montgomery, Alabama" },
+      { title: "Strategic hub at the network center of the U.S. automotive industry" },
       { title: "Integrated QC & inspection for automotive tier suppliers" },
       { title: "Expanding warehouse zones for OEM partner growth" },
       { title: "Precision automotive parts assembly for OEM production programs" },
@@ -110,7 +110,7 @@ const en = {
   },
   about: {
     label: "Company Profile",
-    title: "Strategic Facility in Alabama",
+    title: "Strategic hub at the network center of the U.S. automotive industry",
     subtitle:
       "Located in Montgomery, Alabama — at the heart of the U.S. automotive manufacturing corridor.",
     facilityTitle: "Facility Overview",
@@ -317,7 +317,7 @@ const ko: Translations = {
   news: {
     label: "SKY ONE NOW",
     items: [
-      { title: "앨라바마 몽고메리 전략 물류 거점 운영" },
+      { title: "미국 자동차 산업의 네트워크 중심 전략적 거점" },
       { title: "자동차 부품 협력사 대상 통합 QC·검사 서비스" },
       { title: "OEM 파트너 성장을 위한 창고 Zone 확장" },
       { title: "OEM 생산 프로그램을 위한 정밀 자동차 부품 조립" },
@@ -379,7 +379,7 @@ const ko: Translations = {
   },
   about: {
     label: "회사소개",
-    title: "앨라바마 전략 거점",
+    title: "미국 자동차 산업의 네트워크 중심 전략적 거점",
     subtitle: "미국 자동차 제조 벨트의 중심, 앨라바마주 몽고메리에 위치한 물류 거점입니다.",
     facilityTitle: "시설 개요",
     fields: {
