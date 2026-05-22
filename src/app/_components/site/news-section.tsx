@@ -20,7 +20,7 @@ export function NewsSection() {
                 key={item.title}
                 className="group overflow-hidden border border-steel-200 bg-white"
               >
-                <div className="relative h-48 overflow-hidden">
+                <div className="relative aspect-[16/9] overflow-hidden bg-steel-900">
                   <SectionImage
                     src={img.src}
                     alt={img.alt}

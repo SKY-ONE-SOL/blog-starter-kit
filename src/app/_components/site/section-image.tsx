@@ -25,7 +25,7 @@ export function SectionImage({
       fill={fill}
       priority={priority}
       sizes={sizes}
-      className={cn("object-cover", className)}
+      className={cn("absolute inset-0 h-full w-full object-cover object-center", className)}
     />
   );
 }
