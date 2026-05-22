@@ -413,10 +413,10 @@ const ko: Translations = {
   },
   location: {
     label: "위치",
-    title: "주요 고객사와의 거리",
+    title: "완성차 공장과의 거리",
     subtitle: "주요 완성차 공장 및 모빌 항만과 인접한 최적의 입지를 갖추고 있습니다.",
     table: {
-      customer: "고객사",
+      customer: "완성차 공장",
       location: "위치",
       distance: "거리",
       time: "소요시간",
