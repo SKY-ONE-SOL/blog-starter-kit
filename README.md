@@ -22,7 +22,7 @@ npm start
 
 ## Site Sections
 
-- Hero (AUTOMOTIVE PARTS TOTAL SOLUTION)
+- Hero (AUTOMOTIVE INDUSTRY TOTAL SOLUTION)
 - SKY ONE NOW — 4 news cards
 - Business Area — Logistics, QC/Inspection/Rework, Warehouse, Assembly
 - Global Network & customer proximity table
