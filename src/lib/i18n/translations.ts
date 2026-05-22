@@ -132,10 +132,10 @@ const en = {
   },
   location: {
     label: "Location",
-    title: "Proximity to Key Customers",
+    title: "Distance to OEM Assembly Plants",
     subtitle: "Strategically positioned near major automotive plants and the Mobile Port.",
     table: {
-      customer: "Customer",
+      customer: "OEM Plant",
       location: "Location",
       distance: "Distance",
       time: "Travel Time",
@@ -146,7 +146,6 @@ const en = {
       { customer: "KaGA", location: "West Point, Georgia", distance: "88 miles", time: "1 hr 30 mins", remark: "Time zone (CT/ET)" },
       { customer: "Mercedes-Benz", location: "Vance, Alabama", distance: "100 miles", time: "1 hr 45 mins", remark: "—" },
       { customer: "Honda", location: "Lincoln, Alabama", distance: "127 miles", time: "2 hrs", remark: "—" },
-      { customer: "Mobile Port", location: "Mobile, Alabama", distance: "166 miles", time: "2 hr 18 mins", remark: "—" },
       {
         customer: "Mazda Toyota Manufacturing",
         location: "Huntsville, Alabama",
@@ -427,7 +426,6 @@ const ko: Translations = {
       { customer: "KaGA", location: "West Point, Georgia", distance: "88 miles", time: "1시간 30분", remark: "시간대 (CT/ET)" },
       { customer: "Mercedes-Benz", location: "Vance, Alabama", distance: "100 miles", time: "1시간 45분", remark: "—" },
       { customer: "Honda", location: "Lincoln, Alabama", distance: "127 miles", time: "2시간", remark: "—" },
-      { customer: "Mobile Port", location: "Mobile, Alabama", distance: "166 miles", time: "2시간 18분", remark: "—" },
       {
         customer: "Mazda Toyota Manufacturing",
         location: "Huntsville, Alabama",
