@@ -110,9 +110,9 @@ const en = {
   },
   about: {
     label: "Company Profile",
-    title: "Strategic hub at the network center of the U.S. automotive industry",
+    title: "Center of the U.S. automotive manufacturing belt",
     subtitle:
-      "Located in Montgomery, Alabama — at the heart of the U.S. automotive manufacturing corridor.",
+      "A logistics hub in Montgomery, Alabama — a strategic hub at the network center of the automotive industry.",
     facilityTitle: "Facility Overview",
     fields: {
       location: "Location",
@@ -379,8 +379,9 @@ const ko: Translations = {
   },
   about: {
     label: "회사소개",
-    title: "미국 자동차 산업의 네트워크 중심 전략적 거점",
-    subtitle: "미국 자동차 제조 벨트의 중심, 앨라바마주 몽고메리에 위치한 물류 거점입니다.",
+    title: "미국 자동차 제조 벨트의 중심",
+    subtitle:
+      "자동차 산업의 네트워크 중심 전략적 거점인 앨라바마주 몽고메리에 위치한 물류 거점입니다.",
     facilityTitle: "시설 개요",
     fields: {
       location: "위치",
