@@ -93,7 +93,6 @@ const en = {
     subtitle: "Strategically positioned in the U.S. automotive manufacturing corridor.",
     corridorMap: {
       alt: "Southeast U.S. Automotive Corridor — SKY ONE SOLUTION Montgomery hub and OEM assembly plants",
-      note: "* Straight-line distance (approx.)",
     },
   },
   innovationSection: {
@@ -371,7 +370,6 @@ const ko: Translations = {
     subtitle: "미국 자동차 제조 벨트 중심의 전략적 입지",
     corridorMap: {
       alt: "미국 남동부 자동차 제조 벨트 — SKY ONE SOLUTION 몽고메리 허브와 완성차 공장",
-      note: "* 직선 거리 (Approx.)",
     },
   },
   innovationSection: {
