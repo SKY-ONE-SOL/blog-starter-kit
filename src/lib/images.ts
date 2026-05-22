@@ -17,7 +17,7 @@ export const siteImages = {
     alt: globalNetworkMapAlt,
   },
   corridorMap: {
-    src: "/images/automotive-corridor-map.jpg",
+    src: "/images/automotive-corridor-map.png",
     alt: "Southeast U.S. Automotive Corridor map from SKY ONE SOLUTION Montgomery hub to OEM plants",
   },
   qualityLab: {
