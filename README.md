@@ -31,8 +31,14 @@ npm start
 
 Content sourced from the SKY ONE company profile document.
 
-## 배포·업데이트 (나중에 진행)
-
-로컬 확인, GitHub 반영, sky1usa.com 배포, 로고 교체 방법은 아래 문서에 정리되어 있습니다.
+## 배포·업데이트
 
 → **[docs/업데이트-배포-가이드.md](docs/업데이트-배포-가이드.md)**
+
+## 플랫폼 전략 (홈페이지 + 고객포털 + WMS)
+
+향후 **고객포털(재고 조회)** · **WMS** · **3PL 확대** 로드맵, 수정 포인트, 인프라 준비 사항:
+
+→ **[docs/플랫폼-전략-로드맵.md](docs/플랫폼-전략-로드맵.md)**
+
+환경 변수 템플릿: [.env.example](.env.example)
