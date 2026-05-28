@@ -140,7 +140,7 @@ const en = {
     text: "Automotive Parts Logistics & Quality Solution Provider",
   },
   about: {
-    label: "Company Profile",
+    label: "About",
     title: "Center of the U.S. automotive manufacturing belt",
     subtitle:
       "A logistics hub in Montgomery, Alabama — a strategic hub at the network center of the automotive industry.",
