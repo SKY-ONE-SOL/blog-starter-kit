@@ -152,8 +152,8 @@ const en = {
     },
     location: {
       address: "Montgomery, Alabama, USA",
-      area: "15 Acres (18,362 평)",
-      warehouse: "34,588 sq.ft (972 평)",
+      area: "15 Acres",
+      warehouse: "34,588 sq.ft",
       zones: [
         { id: "A", label: "Zone A", description: "Main building + shipping yard" },
         { id: "B", label: "Zone B", description: "Factory expansion site (5 acres)" },
@@ -463,8 +463,8 @@ const ko: Translations = {
     },
     location: {
       address: "Montgomery, Alabama, USA",
-      area: "15 Acres (18,362 평)",
-      warehouse: "34,588 sq.ft (972 평)",
+      area: "18,362 평",
+      warehouse: "972 평",
       zones: [
         { id: "A", label: "Zone A", description: "메인동 + 출고장" },
         { id: "B", label: "Zone B", description: "공장 증축 부지 (5 acres)" },
