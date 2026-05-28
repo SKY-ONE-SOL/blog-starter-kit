@@ -9,8 +9,8 @@ export const siteImages = {
     alt: "Automotive logistics warehouse operations",
   },
   facility: {
-    src: "/images/facility.jpg",
-    alt: "Warehouse and distribution facility",
+    src: "/images/news-facility.jpg",
+    alt: "Montgomery, Alabama logistics hub at the center of the U.S. automotive manufacturing network",
   },
   network: {
     src: globalNetworkMap,
