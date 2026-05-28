@@ -32,7 +32,7 @@ export function NetworkSection() {
       </div>
 
       <div className="mx-auto max-w-[1400px] px-6 lg:px-10">
-        <p className="max-w-2xl text-lg text-steel-600">{t.networkSection.subtitle}</p>
+        <p className="max-w-2xl text-lg font-bold text-steel-700">{t.networkSection.subtitle}</p>
 
         <figure className="mt-16 overflow-hidden border border-steel-200 bg-navy-950 shadow-md">
           <div className="relative aspect-[3/2] w-full">
