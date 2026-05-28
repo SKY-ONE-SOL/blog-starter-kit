@@ -4,7 +4,8 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "images:news-facility": "node scripts/generate-news-facility-image.mjs"
+    "images:news-facility": "node scripts/generate-news-facility-image.mjs",
+    "images:regional-oem-map": "node scripts/set-regional-oem-map.mjs"
   },
   "dependencies": {
     "classnames": "^2.5.1",
