@@ -30,7 +30,10 @@ export const siteImages = {
       src: "/images/inspection.jpg",
       alt: "Engineer performing automotive quality inspection",
     },
-    warehouse: { src: "/images/warehouse.jpg", alt: "Warehouse storage and operations" },
+    warehouse: {
+      src: "/images/warehouse.jpg",
+      alt: "Automotive parts warehouse storage and picking operations",
+    },
     rework: {
       src: "/images/automotive-parts.jpg",
       alt: "Automotive engine rework and mechanical service",

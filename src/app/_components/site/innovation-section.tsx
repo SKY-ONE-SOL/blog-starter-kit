@@ -40,7 +40,7 @@ export function InnovationSection() {
         <div className="mt-14 grid gap-6 lg:grid-cols-2">
           <div className="border border-steel-700 bg-navy-900/50 p-8 md:p-10">
             <p className="text-xs font-bold uppercase tracking-wider text-emerald-400">
-              Warehouse
+              {inv.warehouseTag}
             </p>
             <h3 className="mt-2 text-xl font-bold">{inv.warehouseTitle}</h3>
             <ul className="mt-6 space-y-3 border-t border-steel-700 pt-6">
@@ -54,7 +54,7 @@ export function InnovationSection() {
           </div>
           <div className="border border-steel-700 bg-navy-900/50 p-8 md:p-10">
             <p className="text-xs font-bold uppercase tracking-wider text-amber-400">
-              Assembly
+              {inv.assemblyTag}
             </p>
             <h3 className="mt-2 text-xl font-bold">{inv.assemblyTitle}</h3>
             <ul className="mt-6 space-y-3 border-t border-steel-700 pt-6">
