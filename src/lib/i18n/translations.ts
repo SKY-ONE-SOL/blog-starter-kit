@@ -410,9 +410,8 @@ const ko: Translations = {
   },
   innovationSection: {
     label: "Innovation",
-    title: "End-to-End 물류 · 창고 · 어셈블리 · 품질 통합 솔루션",
-    subtitle:
-      "입고부터 보관·피킹·출고, 라인사이드 조립까지 — 완성차 프로그램에 맞춘 창고·물류 운영을 수행하며, 고객 포털·WMS 기반 재고 가시화로 확장할 수 있는 구조를 갖추고 있습니다.",
+    title: "End-to-End 통합 솔루션",
+    subtitle: "물류 · 창고 · 어셈블리 · 품질까지 최적의 환경 제공",
     cta: "운영 역량 보기",
     warehouseTitle: "창고 운영",
     warehouseItems: [
