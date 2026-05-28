@@ -100,7 +100,7 @@ const en = {
     label: "Innovation",
     title: "End-to-End Logistics, Warehousing, Assembly & Quality Solutions",
     subtitle:
-      "From dock-to-stock and pick-to-ship to line-side assembly — we run disciplined warehouse and logistics operations built for OEM programs, with a clear path to customer portal and WMS visibility.",
+      "Logistics · warehousing · assembly · quality — delivering the optimal environment for OEM programs.",
     cta: "Explore our operations",
     warehouseTitle: "Warehouse Operations",
     warehouseItems: [
@@ -451,7 +451,7 @@ const ko: Translations = {
     highlights: ["Dock to Stock", "Pick to Ship", "Line-Side Assembly", "OEM Corridor"],
   },
   marquee: {
-    text: "Automotive Parts Logistics & Quality Solution Provider",
+    text: "자동차 부품 물류 · 품질 솔루션 프로바이더",
   },
   about: {
     label: "회사소개",
