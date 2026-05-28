@@ -16,6 +16,10 @@ export const siteImages = {
     src: globalNetworkMap,
     alt: globalNetworkMapAlt,
   },
+  regionalOemMap: {
+    src: "/images/regional-oem-locations.png",
+    alt: "Regional OEM Locations map from SKY ONE SOLUTION Montgomery hub to Southeast automotive plants",
+  },
   qualityLab: {
     src: "/images/quality-lab.jpg",
     alt: "Quality inspection and manufacturing",

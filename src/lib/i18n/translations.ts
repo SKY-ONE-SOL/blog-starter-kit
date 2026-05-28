@@ -91,6 +91,9 @@ const en = {
     label: "Global Network",
     title: "For More Meaningful Connections",
     subtitle: "Strategically positioned in the U.S. automotive manufacturing corridor.",
+    regionalOemMap: {
+      alt: "Regional OEM Locations — SKY ONE SOLUTION Montgomery hub and nine OEM assembly plants in AL, GA, and TN",
+    },
   },
   innovationSection: {
     label: "Innovation",
@@ -365,6 +368,9 @@ const ko: Translations = {
     label: "Global Network",
     title: "더 의미 있는 연결을 위해",
     subtitle: "미국 자동차 제조 벨트 중심의 전략적 입지",
+    regionalOemMap: {
+      alt: "Regional OEM Locations — SKY ONE SOLUTION 몽고메리 허브와 AL·GA·TN 9개 완성차 공장",
+    },
   },
   innovationSection: {
     label: "Innovation",

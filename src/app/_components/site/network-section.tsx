@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useLanguage } from "@/lib/i18n/language-context";
 import { siteImages } from "@/lib/images";
 import { SectionImage } from "./section-image";
@@ -32,6 +33,19 @@ export function NetworkSection() {
 
       <div className="mx-auto max-w-[1400px] px-6 lg:px-10">
         <p className="max-w-2xl text-lg text-steel-600">{t.networkSection.subtitle}</p>
+
+        <figure className="mt-16 overflow-hidden border border-steel-200 bg-navy-950 shadow-md">
+          <div className="relative aspect-[3/2] w-full">
+            <Image
+              src={siteImages.regionalOemMap.src}
+              alt={t.networkSection.regionalOemMap.alt}
+              fill
+              priority
+              sizes="(max-width: 1400px) 100vw, 1400px"
+              className="object-contain object-center"
+            />
+          </div>
+        </figure>
 
         <div className="mt-16">
           <h3 className="text-lg font-bold text-steel-900">{t.location.title}</h3>
