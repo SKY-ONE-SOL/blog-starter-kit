@@ -4,8 +4,7 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "images:news-facility": "node scripts/generate-news-facility-image.mjs",
-    "images:corridor-map": "node scripts/import-corridor-map.mjs"
+    "images:news-facility": "node scripts/generate-news-facility-image.mjs"
   },
   "dependencies": {
     "classnames": "^2.5.1",
