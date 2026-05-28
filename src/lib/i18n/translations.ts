@@ -307,8 +307,10 @@ const en = {
   contact: {
     label: "Contact",
     title: "Thank You",
-    subtitle:
-      "We look forward to partnering with you. Reach out to discuss how SKY ONE SOLUTION can support your operations.",
+    subtitleLines: [
+      "We look forward to partnering with you.",
+      "Reach out to discuss how SKY ONE SOLUTION can support your operations.",
+    ],
   },
   footer: {
     location: "Location",
@@ -602,7 +604,10 @@ const ko: Translations = {
   contact: {
     label: "문의",
     title: "감사합니다",
-    subtitle: "함께 성장할 파트너가 되겠습니다. SKY ONE SOLUTION에 문의해 주세요.",
+    subtitleLines: [
+      "함께 성장할 파트너가 되겠습니다.",
+      "SKY ONE SOLUTION에 문의해 주세요.",
+    ],
   },
   footer: {
     location: "위치",

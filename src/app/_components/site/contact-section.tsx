@@ -14,7 +14,11 @@ export function ContactSection() {
         <h2 className="mt-4 font-display text-3xl font-bold text-white md:text-5xl">
           {t.contact.title}
         </h2>
-        <p className="mx-auto mt-6 max-w-xl text-lg text-brand-100">{t.contact.subtitle}</p>
+        <div className="mx-auto mt-6 max-w-xl space-y-4 text-lg text-brand-100">
+          {t.contact.subtitleLines.map((line) => (
+            <p key={line}>{line}</p>
+          ))}
+        </div>
         <a
           href={`mailto:${t.common.email}`}
           className="mt-10 inline-block bg-white px-12 py-4 text-sm font-bold uppercase tracking-widest text-brand-700 transition hover:bg-brand-50"
