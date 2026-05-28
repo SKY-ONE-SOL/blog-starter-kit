@@ -21,8 +21,8 @@ export function SiteShell() {
         <NewsSection />
         <BusinessAreaSection />
         <NetworkSection />
-        <AboutSection />
         <InnovationSection />
+        <AboutSection />
         <ContactSection />
         <MarqueeBanner />
       </main>
