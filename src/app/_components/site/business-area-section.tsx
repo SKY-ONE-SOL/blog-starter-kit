@@ -42,7 +42,7 @@ export function BusinessAreaSection() {
                     {card.description}
                   </p>
                   <span className="mt-8 inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.2em] text-white/80 transition group-hover:text-white">
-                    Learn more
+                    {t.common.learnMore}
                     <span aria-hidden>→</span>
                   </span>
                 </div>

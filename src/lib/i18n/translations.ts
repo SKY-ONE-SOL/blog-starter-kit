@@ -12,6 +12,7 @@ const en = {
     domain: "sky1usa.com",
     email: "info@sky1usa.com",
     rights: "All rights reserved.",
+    learnMore: "Learn more",
   },
   nav: {
     business: "Business",
@@ -330,6 +331,7 @@ const ko: Translations = {
     domain: "sky1usa.com",
     email: "info@sky1usa.com",
     rights: "All rights reserved.",
+    learnMore: "자세히 보기",
   },
   nav: {
     business: "사업영역",
@@ -353,8 +355,8 @@ const ko: Translations = {
     ctaServices: "사업영역",
     ctaAbout: "시설 소개",
     stats: [
-      { value: "15", unit: "Acres", label: "시설 면적" },
-      { value: "34,588", unit: "sq.ft", label: "창고 면적" },
+      { value: "18,362", unit: "평", label: "시설 면적" },
+      { value: "972", unit: "평", label: "창고 면적" },
       { value: "24/7", unit: "", label: "상시 대응" },
     ],
   },
@@ -368,7 +370,7 @@ const ko: Translations = {
     ],
   },
   businessArea: {
-    label: "Business Area",
+    label: "사업영역",
     cards: [
       {
         id: "logistics",
@@ -401,7 +403,7 @@ const ko: Translations = {
     ],
   },
   networkSection: {
-    label: "Global Network",
+    label: "네트워크",
     title: "더 의미 있는 연결을 위해",
     subtitle: "미국 자동차 제조 벨트 중심의 전략적 입지",
     regionalOemMap: {
@@ -409,7 +411,7 @@ const ko: Translations = {
     },
   },
   innovationSection: {
-    label: "Innovation",
+    label: "혁신",
     title: "End-to-End 통합 솔루션",
     subtitle: "물류 · 창고 · 어셈블리 · 품질까지 최적의 환경 제공",
     cta: "운영 역량 보기",
@@ -468,8 +470,8 @@ const ko: Translations = {
       warehouse: "972 평",
       zones: [
         { id: "A", label: "Zone A", description: "메인동 + 출고장" },
-        { id: "B", label: "Zone B", description: "공장 증축 부지 (5 acres)" },
-        { id: "C", label: "Zone C", description: "공장 증축 부지 (4 acres)" },
+        { id: "B", label: "Zone B", description: "공장 증축 부지 (5에이커)" },
+        { id: "C", label: "Zone C", description: "공장 증축 부지 (4에이커)" },
       ],
     },
   },
