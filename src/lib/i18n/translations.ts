@@ -97,7 +97,7 @@ const en = {
   },
   innovationSection: {
     label: "Innovation",
-    title: "Logistics, warehouse & assembly operations",
+    title: "Logistics · Warehouse · Assembly · Quality — One-Stop Service",
     subtitle:
       "From dock-to-stock and pick-to-ship to line-side assembly — we run disciplined warehouse and logistics operations built for OEM programs, with a clear path to customer portal and WMS visibility.",
     cta: "Explore our operations",
@@ -410,7 +410,7 @@ const ko: Translations = {
   },
   innovationSection: {
     label: "Innovation",
-    title: "물류 · 창고 · 어셈블리 운영",
+    title: "물류 · 창고 · 어셈블리 · 품질까지 One-Stop 서비스",
     subtitle:
       "입고부터 보관·피킹·출고, 라인사이드 조립까지 — 완성차 프로그램에 맞춘 창고·물류 운영을 수행하며, 고객 포털·WMS 기반 재고 가시화로 확장할 수 있는 구조를 갖추고 있습니다.",
     cta: "운영 역량 보기",
