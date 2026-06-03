@@ -416,7 +416,7 @@ const ko: Translations = {
     label: "혁신",
     title: "End-to-End 부품 통합 솔루션",
     subtitle:
-      "부품 물류 · 부품 창고 · 부품 조립 · 품질 — 부품을 보관·가공해 완성차 조립 공장에 공급하는 최적의 환경",
+      "물류 · 창고 · 조립 · 품질 — 자동차 부품을 보관·가공해 완성차 조립 공장에 공급하는 최적의 환경",
     cta: "운영 역량 보기",
     warehouseTag: "부품 창고",
     assemblyTag: "부품 조립",
