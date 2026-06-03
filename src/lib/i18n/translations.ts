@@ -399,7 +399,7 @@ const ko: Translations = {
         id: "assembly",
         title: "PARTS ASSEMBLY",
         description:
-          "부품 서브어셈블리, 키팅, 시퀀싱, 모듈 조립 — 완성차 조립이 아닌 부품 단위 조립 후 OEM 공장 라인사이드에 공급합니다.",
+          "부품 서브어셈블리, 키팅, 시퀀싱, 모듈 조립 — 부품 단위 조립 후 OEM 공장 라인사이드에 공급합니다.",
         href: "#innovation",
       },
     ],
