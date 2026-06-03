@@ -392,7 +392,7 @@ const ko: Translations = {
         id: "warehouse",
         title: "PARTS WAREHOUSE",
         description:
-          "자동차 부품 전용 창고 — 입고·적치, FIFO 재고, 피킹·포장 후 완성차 조립 공장으로 출고합니다. (완성차 보관 사업 아님)",
+          "자동차 부품 전용 창고 — 입고·적치, FIFO 재고, 피킹·포장 후 완성차 조립 공장으로 출고합니다.",
         href: "#innovation",
       },
       {
