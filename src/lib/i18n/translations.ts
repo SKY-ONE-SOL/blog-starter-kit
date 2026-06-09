@@ -343,7 +343,7 @@ const ko: Translations = {
     network: "네트워크",
     innovation: "혁신",
     about: "회사소개",
-    wms: "Client Login",
+    wms: "고객 로그인",
     contact: "문의",
     cta: "문의하기",
   },
