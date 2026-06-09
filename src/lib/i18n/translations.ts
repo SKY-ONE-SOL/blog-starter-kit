@@ -632,6 +632,20 @@ export const navItems = [
   { href: "#network", key: "network" as const },
   { href: "#innovation", key: "innovation" as const },
   { href: "#about", key: "about" as const },
-  { href: WMS_URL, key: "wms" as const, external: true },
+  { href: "#contact", key: "contact" as const },
+];
+
+export const wmsNavItem = {
+  href: WMS_URL,
+  key: "wms" as const,
+  external: true,
+};
+
+export const footerNavItems = [
+  { href: "#business", key: "business" as const },
+  { href: "#network", key: "network" as const },
+  { href: "#innovation", key: "innovation" as const },
+  { href: "#about", key: "about" as const },
+  wmsNavItem,
   { href: "#contact", key: "contact" as const },
 ];

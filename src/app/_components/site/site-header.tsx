@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { useLanguage } from "@/lib/i18n/language-context";
-import { navItems } from "@/lib/i18n/translations";
+import { navItems, wmsNavItem } from "@/lib/i18n/translations";
 import { CompanyLogo } from "./company-logo";
 import { LanguageToggle } from "./language-toggle";
 import cn from "classnames";
@@ -18,6 +18,11 @@ export function SiteHeader() {
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
+
+  const navLinkClass = cn(
+    "text-sm font-medium uppercase tracking-[0.12em] transition",
+    scrolled ? "text-steel-600 hover:text-brand-700" : "text-white/90 hover:text-white",
+  );
 
   return (
     <header
@@ -41,25 +46,21 @@ export function SiteHeader() {
 
         <nav className="hidden items-center gap-10 xl:flex">
           {navItems.map((item) => (
-            <a
-              key={item.href}
-              href={item.href}
-              {...(item.external
-                ? { target: "_blank", rel: "noopener noreferrer" }
-                : undefined)}
-              className={cn(
-                "text-sm font-medium uppercase tracking-[0.12em] transition",
-                scrolled
-                  ? "text-steel-600 hover:text-brand-700"
-                  : "text-white/90 hover:text-white",
-              )}
-            >
+            <a key={item.href} href={item.href} className={navLinkClass}>
               {t.nav[item.key]}
             </a>
           ))}
         </nav>
 
         <div className="hidden items-center gap-4 md:flex">
+          <a
+            href={wmsNavItem.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={navLinkClass}
+          >
+            {t.nav[wmsNavItem.key]}
+          </a>
           <LanguageToggle variant={scrolled ? "light" : "dark"} />
           <a
             href="#contact"
@@ -100,15 +101,21 @@ export function SiteHeader() {
               <a
                 key={item.href}
                 href={item.href}
-                {...(item.external
-                  ? { target: "_blank", rel: "noopener noreferrer" }
-                  : undefined)}
                 className="text-sm font-medium uppercase tracking-wider text-steel-800"
                 onClick={() => setOpen(false)}
               >
                 {t.nav[item.key]}
               </a>
             ))}
+            <a
+              href={wmsNavItem.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm font-medium uppercase tracking-wider text-steel-800"
+              onClick={() => setOpen(false)}
+            >
+              {t.nav[wmsNavItem.key]}
+            </a>
             <a
               href="#contact"
               className="bg-brand-600 px-5 py-3 text-center text-sm font-semibold uppercase tracking-wider text-white"

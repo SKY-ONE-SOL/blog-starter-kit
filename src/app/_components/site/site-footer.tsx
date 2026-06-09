@@ -1,7 +1,7 @@
 "use client";
 
 import { useLanguage } from "@/lib/i18n/language-context";
-import { navItems } from "@/lib/i18n/translations";
+import { footerNavItems } from "@/lib/i18n/translations";
 import { CompanyLogo } from "./company-logo";
 
 export function SiteFooter() {
@@ -24,11 +24,11 @@ export function SiteFooter() {
           <div>
             <h3 className="text-xs font-bold uppercase tracking-[0.2em] text-white">Menu</h3>
             <ul className="mt-4 space-y-2">
-              {navItems.map((item) => (
+              {footerNavItems.map((item) => (
                 <li key={item.href}>
                   <a
                     href={item.href}
-                    {...(item.external
+                    {...("external" in item && item.external
                       ? { target: "_blank", rel: "noopener noreferrer" }
                       : undefined)}
                     className="text-sm transition hover:text-white"
