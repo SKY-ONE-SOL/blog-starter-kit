@@ -1,3 +1,5 @@
+import { WMS_URL } from "@/lib/brand";
+
 export type Locale = "en" | "ko";
 
 export const LOCALES: Locale[] = ["en", "ko"];
@@ -19,6 +21,7 @@ const en = {
     network: "Network",
     innovation: "Innovation",
     about: "About",
+    wms: "WMS",
     contact: "Contact",
     cta: "Contact Us",
   },
@@ -340,6 +343,7 @@ const ko: Translations = {
     network: "네트워크",
     innovation: "혁신",
     about: "회사소개",
+    wms: "WMS",
     contact: "문의",
     cta: "문의하기",
   },
@@ -628,5 +632,6 @@ export const navItems = [
   { href: "#network", key: "network" as const },
   { href: "#innovation", key: "innovation" as const },
   { href: "#about", key: "about" as const },
+  { href: WMS_URL, key: "wms" as const, external: true },
   { href: "#contact", key: "contact" as const },
 ];

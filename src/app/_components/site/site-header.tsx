@@ -44,6 +44,9 @@ export function SiteHeader() {
             <a
               key={item.href}
               href={item.href}
+              {...(item.external
+                ? { target: "_blank", rel: "noopener noreferrer" }
+                : undefined)}
               className={cn(
                 "text-sm font-medium uppercase tracking-[0.12em] transition",
                 scrolled
@@ -97,6 +100,9 @@ export function SiteHeader() {
               <a
                 key={item.href}
                 href={item.href}
+                {...(item.external
+                  ? { target: "_blank", rel: "noopener noreferrer" }
+                  : undefined)}
                 className="text-sm font-medium uppercase tracking-wider text-steel-800"
                 onClick={() => setOpen(false)}
               >

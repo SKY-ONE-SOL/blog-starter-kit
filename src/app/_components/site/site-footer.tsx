@@ -28,6 +28,9 @@ export function SiteFooter() {
                 <li key={item.href}>
                   <a
                     href={item.href}
+                    {...(item.external
+                      ? { target: "_blank", rel: "noopener noreferrer" }
+                      : undefined)}
                     className="text-sm transition hover:text-white"
                   >
                     {t.nav[item.key]}
