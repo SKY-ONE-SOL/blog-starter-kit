@@ -52,7 +52,7 @@ export function NetworkSection() {
           <p className="mt-2 text-steel-600">{t.location.subtitle}</p>
 
           <div className="mt-8 overflow-x-auto">
-            <table className="w-full min-w-[640px] border-collapse text-left text-sm">
+            <table className="w-full min-w-[480px] border-collapse text-left text-sm">
               <thead>
                 <tr className="border-b-2 border-steel-900">
                   <th className="py-4 pr-4 text-xs font-bold uppercase tracking-wider">
@@ -60,12 +60,6 @@ export function NetworkSection() {
                   </th>
                   <th className="py-4 pr-4 text-xs font-bold uppercase tracking-wider">
                     {table.location}
-                  </th>
-                  <th className="py-4 pr-4 text-xs font-bold uppercase tracking-wider">
-                    {table.distance}
-                  </th>
-                  <th className="py-4 pr-4 text-xs font-bold uppercase tracking-wider">
-                    {table.time}
                   </th>
                   <th className="py-4 text-xs font-bold uppercase tracking-wider">
                     {table.remark}
@@ -77,8 +71,6 @@ export function NetworkSection() {
                   <tr key={row.customer} className="border-b border-steel-200">
                     <td className="py-4 pr-4 font-semibold text-steel-900">{row.customer}</td>
                     <td className="py-4 pr-4 text-steel-600">{row.location}</td>
-                    <td className="py-4 pr-4 font-mono text-steel-700">{row.distance}</td>
-                    <td className="py-4 pr-4 font-mono text-steel-700">{row.time}</td>
                     <td className="py-4 text-steel-500">{row.remark}</td>
                   </tr>
                 ))}

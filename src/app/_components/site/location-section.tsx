@@ -18,7 +18,7 @@ export function LocationSection() {
 
         <div className="mt-14 overflow-hidden border border-steel-200 bg-white shadow-card">
           <div className="overflow-x-auto">
-            <table className="w-full min-w-[640px] text-left text-sm">
+            <table className="w-full min-w-[480px] text-left text-sm">
               <thead>
                 <tr className="border-b border-steel-200 bg-navy-950 text-white">
                   <th className="px-6 py-4 text-xs font-bold uppercase tracking-wider">
@@ -26,12 +26,6 @@ export function LocationSection() {
                   </th>
                   <th className="px-6 py-4 text-xs font-bold uppercase tracking-wider">
                     {table.location}
-                  </th>
-                  <th className="px-6 py-4 text-xs font-bold uppercase tracking-wider">
-                    {table.distance}
-                  </th>
-                  <th className="px-6 py-4 text-xs font-bold uppercase tracking-wider">
-                    {table.time}
                   </th>
                   <th className="px-6 py-4 text-xs font-bold uppercase tracking-wider">
                     {table.remark}
@@ -46,8 +40,6 @@ export function LocationSection() {
                   >
                     <td className="px-6 py-4 font-semibold text-navy-950">{row.customer}</td>
                     <td className="px-6 py-4 text-steel-600">{row.location}</td>
-                    <td className="px-6 py-4 font-mono text-steel-700">{row.distance}</td>
-                    <td className="px-6 py-4 font-mono text-steel-700">{row.time}</td>
                     <td className="px-6 py-4 text-steel-500">{row.remark}</td>
                   </tr>
                 ))}
