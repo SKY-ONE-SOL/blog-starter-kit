@@ -153,17 +153,17 @@ const en = {
     facilityTitle: "Facility Overview",
     fields: {
       location: "Location",
-      area: "Total Area",
-      warehouse: "Warehouse",
     },
     location: {
-      address: "Montgomery, Alabama, USA",
-      area: "15 Acres",
-      warehouse: "34,588 sq.ft",
+      addresses: [
+        "Montgomery, Alabama, USA",
+        "Opelika, Alabama, USA",
+        "Auburn, Alabama, USA",
+      ],
       zones: [
-        { id: "A", label: "Zone A", description: "Main building + shipping yard" },
-        { id: "B", label: "Zone B", description: "Factory expansion site (5 acres)" },
-        { id: "C", label: "Zone C", description: "Factory expansion site (4 acres)" },
+        { id: "A", label: "Zone A", description: "Montgomery" },
+        { id: "B", label: "Zone B", description: "Opelika" },
+        { id: "C", label: "Zone C", description: "Auburn" },
       ],
     },
   },
@@ -466,17 +466,17 @@ const ko: Translations = {
     facilityTitle: "시설 개요",
     fields: {
       location: "위치",
-      area: "면적",
-      warehouse: "창고면적",
     },
     location: {
-      address: "Montgomery, Alabama, USA",
-      area: "18,362 평",
-      warehouse: "972 평",
+      addresses: [
+        "Montgomery, Alabama, USA",
+        "Opelika, Alabama, USA",
+        "Auburn, Alabama, USA",
+      ],
       zones: [
-        { id: "A", label: "Zone A", description: "메인동 + 출고장" },
-        { id: "B", label: "Zone B", description: "공장 증축 부지 (5에이커)" },
-        { id: "C", label: "Zone C", description: "공장 증축 부지 (4에이커)" },
+        { id: "A", label: "Zone A", description: "몽고메리" },
+        { id: "B", label: "Zone B", description: "오펠라이카" },
+        { id: "C", label: "Zone C", description: "어번" },
       ],
     },
   },

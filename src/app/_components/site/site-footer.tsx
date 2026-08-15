@@ -50,7 +50,11 @@ export function SiteFooter() {
             >
               {t.common.email}
             </a>
-            <p className="mt-4 text-sm">{t.about.location.address}</p>
+            <div className="mt-4 space-y-1 text-sm">
+              {t.about.location.addresses.map((address) => (
+                <p key={address}>{address}</p>
+              ))}
+            </div>
             <p className="mt-1 text-sm">{t.common.domain}</p>
           </div>
         </div>

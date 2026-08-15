@@ -22,19 +22,13 @@ export function AboutSection() {
                 <dt className="text-xs font-bold uppercase tracking-wider text-steel-500">
                   {t.about.fields.location}
                 </dt>
-                <dd className="mt-1 text-lg font-semibold text-steel-900">{loc.address}</dd>
-              </div>
-              <div>
-                <dt className="text-xs font-bold uppercase tracking-wider text-steel-500">
-                  {t.about.fields.area}
-                </dt>
-                <dd className="mt-1 text-lg font-semibold text-steel-900">{loc.area}</dd>
-              </div>
-              <div>
-                <dt className="text-xs font-bold uppercase tracking-wider text-steel-500">
-                  {t.about.fields.warehouse}
-                </dt>
-                <dd className="mt-1 text-lg font-semibold text-steel-900">{loc.warehouse}</dd>
+                <dd className="mt-1 space-y-1">
+                  {loc.addresses.map((address) => (
+                    <p key={address} className="text-lg font-semibold text-steel-900">
+                      {address}
+                    </p>
+                  ))}
+                </dd>
               </div>
             </dl>
           </div>
